@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DissectPECOFFBinary", "DissectPECOFFBinary\DissectPECOFFBinary.csproj", "{0D107F9D-8774-4C5F-AFAB-A876499820A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub Files", "GitHub Files", "{D964C15F-622E-4DC4-B04E-96C7D73CED49}"
+	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D107F9D-8774-4C5F-AFAB-A876499820A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D107F9D-8774-4C5F-AFAB-A876499820A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D107F9D-8774-4C5F-AFAB-A876499820A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D107F9D-8774-4C5F-AFAB-A876499820A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
