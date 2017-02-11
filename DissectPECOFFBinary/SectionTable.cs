@@ -16,7 +16,7 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0x8)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 VirtualSize;
+        public UInt32 VirtualSize;
 
         [FieldOffset(0xC)]
         [MarshalAs(UnmanagedType.U4)]
@@ -24,11 +24,11 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 SizeOfRawData;
+        public UInt32 SizeOfRawData;
 
         [FieldOffset(0x14)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 PointerToRawData;
+        public UInt32 PointerToRawData;
 
         [FieldOffset(0x18)]
         [MarshalAs(UnmanagedType.U4)]
