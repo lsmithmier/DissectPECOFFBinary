@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DissectPECOFFBinary
 {
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
-    public struct COFFHeader
+    public struct COFFHeader : IPECOFFPart
     {
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.U2)]

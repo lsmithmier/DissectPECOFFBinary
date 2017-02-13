@@ -34,6 +34,7 @@ namespace DissectPECOFFBinary
 
         private static void DissectFile(string fileName)
         {
+
             Dictionary<string, SectionTable> sectionTables = 
                 new Dictionary<string, SectionTable>();
             using(FileStream inputFile = File.OpenRead(fileName))

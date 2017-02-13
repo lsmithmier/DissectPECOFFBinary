@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DissectPECOFFBinary
 {
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
-    public struct MSDOS20Section
+    public struct MSDOS20Section : IPECOFFPart
     {
         [FieldOffset(0)]
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x4)]

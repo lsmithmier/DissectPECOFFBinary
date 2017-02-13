@@ -52,11 +52,13 @@
   <ItemGroup>
     <Compile Include="COFFHeader.cs" />
     <Compile Include="COFFOptionalHeaderStandardFields.cs" />
+    <Compile Include="IPECOFFPart.cs" />
     <Compile Include="MSDOS20Section.cs" />
     <Compile Include="OptionalHeaderDataDirectories.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32Plus.cs" />
     <Compile Include="Options.cs" />
+    <Compile Include="PECOFFBinary.cs" />
     <Compile Include="PESignature.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

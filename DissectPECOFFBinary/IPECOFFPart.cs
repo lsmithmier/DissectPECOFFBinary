@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DissectPECOFFBinary
 {
-    struct OptionalHeaderWindowsSpecificPE32Plus : IPECOFFPart
+    interface IPECOFFPart
     {
     }
 }
