@@ -54,11 +54,51 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="MSDOS20Section.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSDOS20Section.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MSDOS20SectionSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="MSDOS20Section.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MSDOS20Section.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DissectPECOFFBinary\DissectPECOFFBinary.csproj">
+      <Project>{0d107f9d-8774-4c5f-afab-a876499820a3}</Project>
+      <Name>DissectPECOFFBinary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestArtifacts\HelloWorld_CSC_2.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_CSC_3.5.exe" />
+    <Content Include="TestArtifacts\HelloWorld_CSC_4.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_2.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_3.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_3.5.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.1.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.2.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.1.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.2.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_4.exe" />
+    <Content Include="TestArtifacts\HelloWorld_VS_Core_1.0.dll" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_2.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0Client.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.1.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.2.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.1.exe" />
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.exe" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
