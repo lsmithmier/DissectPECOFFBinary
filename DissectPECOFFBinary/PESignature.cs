@@ -10,6 +10,11 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct PESignature : IPECOFFPart
     {
+        public static Int64 StartingPosition(MSDOS20Section msdos20Section)
+        {
+            return msdos20Section.OffsetToPEHeader;
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x4)]
         public string Signature;

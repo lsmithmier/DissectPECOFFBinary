@@ -9,7 +9,6 @@ namespace DissectPECOFFBinary
     class PECOFFBinary
     {
         static LinkedList<Type> PartTypes = new LinkedList<Type>();
-        private string fileName;
         LinkedList<IPECOFFPart> Parts = new LinkedList<IPECOFFPart>();
 
         static PECOFFBinary()

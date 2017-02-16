@@ -10,37 +10,44 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct COFFOptionalHeaderStandardFields : IPECOFFPart
     {
+        public static long StartingPosition(MSDOS20Section msdos20Section)
+        {
+            return msdos20Section.OffsetToPEHeader 
+                + (Int64)Marshal.SizeOf<PESignature>()
+                + (Int64)Marshal.SizeOf<COFFHeader>();
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.U2)]
         public UInt16 Magic;
 
         [FieldOffset(0x2)]
         [MarshalAs(UnmanagedType.U1)]
-        byte MajorLinkerVersion;
+        public byte MajorLinkerVersion;
 
         [FieldOffset(0x3)]
         [MarshalAs(UnmanagedType.U1)]
-        byte MinorLinkerVersion;
+        public byte MinorLinkerVersion;
 
         [FieldOffset(0x4)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 SizeOfCode;
+        public UInt32 SizeOfCode;
 
         [FieldOffset(0x8)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 SizeOfInitializedData;
+        public UInt32 SizeOfInitializedData;
 
         [FieldOffset(0xC)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 SizeOfUninitializedData;
+        public UInt32 SizeOfUninitializedData;
 
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 AddressOfEntryPoint;
+        public UInt32 AddressOfEntryPoint;
 
         [FieldOffset(0x14)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 BaseOfCode;
+        public UInt32 BaseOfCode;
 
         public override string ToString()
         {

@@ -23,6 +23,7 @@ namespace DissectPECOFFBinary.SpecFlow
                 File.OpenRead(
                     string.Format(@"..\..\TestArtifacts\{0}", fileName)))
             {
+                inputFile.Position = MSDOS20Section.StartingPosition();
                 MSDOS20Section? msdos20Section =
                     inputFile.ReadStructure<MSDOS20Section>();
                 ScenarioContext.Current.Add("MSDOS20Section", msdos20Section.Value);

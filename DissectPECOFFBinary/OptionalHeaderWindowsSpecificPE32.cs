@@ -8,8 +8,16 @@ using System.Threading.Tasks;
 namespace DissectPECOFFBinary
 {
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
-    struct OptionalHeaderWindowsSpecificPE32 : IPECOFFPart
+    public struct OptionalHeaderWindowsSpecificPE32 : IPECOFFPart
     {
+        public static long StartingPosition(MSDOS20Section msdos20Section)
+        {
+            return msdos20Section.OffsetToPEHeader
+                + (Int64)Marshal.SizeOf<PESignature>()
+                + (Int64)Marshal.SizeOf<COFFHeader>()
+                + (Int64)Marshal.SizeOf<COFFOptionalHeaderStandardFields>();
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.U4)]
         public UInt32 BaseOfData;

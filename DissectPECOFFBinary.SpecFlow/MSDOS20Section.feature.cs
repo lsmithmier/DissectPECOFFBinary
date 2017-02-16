@@ -97,6 +97,288 @@ this.ScenarioSetup(scenarioInfo);
             this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_CSC_2.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
 #line hidden
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_CSC_3_5_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_CSC_3.5.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_CSC_4_0_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_CSC_4.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_2_0_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_2.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_3_0_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_3_5_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.5.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_1_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.1.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_2_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.2.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_1_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.1.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_2_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.2.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_VS_Core_1.0.d" +
+            "ll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_VS_Core_1_0_Dll()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_VS_Core_1.0.dll", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_2.0.e" +
+            "xe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_2_0_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_2.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.0.e" +
+            "xe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_0_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.0Cl" +
+            "ient.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_0Client_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0Client.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.5.1" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_1_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.1.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.5.2" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_2_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.2.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.5.e" +
+            "xe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.6.1" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_6_1_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.1.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the MSDOS20Section from a given PECOFF binary file: HelloWorld_Xamarin_4.6.e" +
+            "xe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "MSDOS20Section")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "MZ&#144;")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:OffsetToPEHeader", "0x80")]
+        public virtual void ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_6_Exe()
+        {
+            this.ReadTheMSDOS20SectionFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.exe", "MZ&#144;", "0x80", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

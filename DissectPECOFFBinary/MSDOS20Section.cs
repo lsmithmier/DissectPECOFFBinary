@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DissectPECOFFBinary
 {
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct MSDOS20Section : IPECOFFPart
     {
+        public static UInt32 StartingPosition() {
+            return 0;
+        }
+
         [FieldOffset(0)]
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x4)]
         public string Signature;

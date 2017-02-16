@@ -10,9 +10,14 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct COFFHeader : IPECOFFPart
     {
+        public static Int64 StartingPosition(MSDOS20Section msdosSection)
+        {
+            return msdosSection.OffsetToPEHeader+(Int64)Marshal.SizeOf<PESignature>();
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.U2)]
-        UInt16 MachineType;
+        public UInt16 MachineType;
 
         [FieldOffset(0x2)]
         [MarshalAs(UnmanagedType.U2)]
@@ -24,19 +29,19 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0x8)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 PointerToSymbolTable;
+        public UInt32 PointerToSymbolTable;
 
         [FieldOffset(0xC)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 NumberOfSymbols;
+        public UInt32 NumberOfSymbols;
 
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U2)]
-        UInt16 SizeOfOptionalHeader;
+        public UInt16 SizeOfOptionalHeader;
 
         [FieldOffset(0x12)]
         [MarshalAs(UnmanagedType.U2)]
-        UInt16 Characteristics;
+        public UInt16 Characteristics;
 
         public override string ToString()
         {
@@ -56,7 +61,7 @@ namespace DissectPECOFFBinary
             returnValue.AppendLine();
             returnValue.AppendFormat("NumberOfSymbols: {0}", NumberOfSymbols);
             returnValue.AppendLine();
-            returnValue.AppendFormat("SizeOfOptionalHeader: {0}", 
+            returnValue.AppendFormat("SizeOfOptionalHeader: 0x{0:X}", 
                 SizeOfOptionalHeader);
             returnValue.AppendLine();
             returnValue.AppendFormat("Characteristics: 0x{0:X}", 

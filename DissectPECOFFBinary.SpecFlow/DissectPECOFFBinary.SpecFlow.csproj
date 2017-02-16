@@ -54,21 +54,61 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="COFFHeader.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COFFHeader.feature</DependentUpon>
+    </Compile>
+    <Compile Include="COFFHeaderSteps.cs" />
+    <Compile Include="COFFOptionalHeaderStandardFields.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COFFOptionalHeaderStandardFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="COFFOptionalHeaderStandardFieldsSteps.cs" />
     <Compile Include="MSDOS20Section.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MSDOS20Section.feature</DependentUpon>
     </Compile>
     <Compile Include="MSDOS20SectionSteps.cs" />
+    <Compile Include="OptionalHeaderWindowsSpecificPE32.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionalHeaderWindowsSpecificPE32.feature</DependentUpon>
+    </Compile>
+    <Compile Include="OptionalHeaderWindowsSpecificPE32Steps.cs" />
+    <Compile Include="PESignature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PESignature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="PESignatureSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="COFFHeader.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>COFFHeader.feature.cs</LastGenOutput>
+    </None>
+    <None Include="COFFOptionalHeaderStandardFields.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>COFFOptionalHeaderStandardFields.feature.cs</LastGenOutput>
+    </None>
     <None Include="MSDOS20Section.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MSDOS20Section.feature.cs</LastGenOutput>
     </None>
+    <None Include="OptionalHeaderWindowsSpecificPE32.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OptionalHeaderWindowsSpecificPE32.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+    <None Include="PESignature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PESignature.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DissectPECOFFBinary\DissectPECOFFBinary.csproj">
