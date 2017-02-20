@@ -10,69 +10,87 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct OptionalHeaderDataDirectories : IPECOFFPart
     {
+        public static long StartingPosition(MSDOS20Section msdos20Section, COFFOptionalHeaderStandardFields coffOptionalHeaderStandardFields)
+        {
+            if (coffOptionalHeaderStandardFields.Magic == 0x10b) {
+                return msdos20Section.OffsetToPEHeader
+                    + (Int64)Marshal.SizeOf<PESignature>()
+                    + (Int64)Marshal.SizeOf<COFFHeader>()
+                    + (Int64)Marshal.SizeOf<COFFOptionalHeaderStandardFields>()
+                    + (Int64)Marshal.SizeOf<OptionalHeaderWindowsSpecificPE32>();
+            } else
+            {
+                return msdos20Section.OffsetToPEHeader
+                    + (Int64)Marshal.SizeOf<PESignature>()
+                    + (Int64)Marshal.SizeOf<COFFHeader>()
+                    + (Int64)Marshal.SizeOf<COFFOptionalHeaderStandardFields>()
+                    + (Int64)Marshal.SizeOf<OptionalHeaderWindowsSpecificPE32Plus>();
+            }
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 ExportTable;
+        public UInt64 ExportTable;
 
         [FieldOffset(0x8)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 ImportTable;
+        public UInt64 ImportTable;
 
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 ResourceTable;
+        public UInt64 ResourceTable;
 
         [FieldOffset(0x18)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 ExceptionTable;
+        public UInt64 ExceptionTable;
 
         [FieldOffset(0x20)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 CertificateTable;
+        public UInt64 CertificateTable;
 
         [FieldOffset(0x28)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 BaseRelocationTable;
+        public UInt64 BaseRelocationTable;
 
         [FieldOffset(0x30)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 Debug;
+        public UInt64 Debug;
 
         [FieldOffset(0x38)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 Architecture;
+        public UInt64 Architecture;
 
         [FieldOffset(0x40)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 GlobalPtr;
+        public UInt64 GlobalPtr;
 
         [FieldOffset(0x48)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 TLSTable;
+        public UInt64 TLSTable;
 
         [FieldOffset(0x50)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 LoadConfigTable;
+        public UInt64 LoadConfigTable;
 
         [FieldOffset(0x58)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 BoundImport;
+        public UInt64 BoundImport;
 
         [FieldOffset(0x60)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 IAT;
+        public UInt64 IAT;
 
         [FieldOffset(0x68)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 DelayImportDescriptor;
+        public UInt64 DelayImportDescriptor;
 
         [FieldOffset(0x70)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 CLRRuntimeHeader;
+        public UInt64 CLRRuntimeHeader;
 
         [FieldOffset(0x78)]
         [MarshalAs(UnmanagedType.U8)]
-        UInt64 Reserved;
+        public UInt64 Reserved;
 
         public override string ToString()
         {

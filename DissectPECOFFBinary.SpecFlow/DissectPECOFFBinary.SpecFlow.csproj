@@ -72,6 +72,12 @@
       <DependentUpon>MSDOS20Section.feature</DependentUpon>
     </Compile>
     <Compile Include="MSDOS20SectionSteps.cs" />
+    <Compile Include="OptionalHeaderDataDirectories.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OptionalHeaderDataDirectories.feature</DependentUpon>
+    </Compile>
+    <Compile Include="OptionalHeaderDataDirectoriesSteps.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +105,10 @@
     <None Include="MSDOS20Section.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MSDOS20Section.feature.cs</LastGenOutput>
+    </None>
+    <None Include="OptionalHeaderDataDirectories.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OptionalHeaderDataDirectories.feature.cs</LastGenOutput>
     </None>
     <None Include="OptionalHeaderWindowsSpecificPE32.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
