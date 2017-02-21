@@ -19,9 +19,13 @@ namespace DissectPECOFFBinary.SpecFlow
         public void WhenIReadInTheMSDOSSection()
         {
             var fileName = ScenarioContext.Current.Get<string>("FileName");
-            using (FileStream inputFile =
-                File.OpenRead(
-                    string.Format(@"..\..\TestArtifacts\{0}", fileName)))
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile = File.OpenRead(filePath))
             {
                 inputFile.Position = MSDOS20Section.StartingPosition();
                 MSDOS20Section? msdos20Section =

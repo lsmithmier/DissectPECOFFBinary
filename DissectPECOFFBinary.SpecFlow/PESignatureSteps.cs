@@ -13,9 +13,13 @@ namespace DissectPECOFFBinary.SpecFlow
         public void WhenIReadInThePESignature()
         {
             var fileName = ScenarioContext.Current.Get<string>("FileName");
-            using (FileStream inputFile =
-                File.OpenRead(
-                    string.Format(@"..\..\TestArtifacts\{0}", fileName)))
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile = File.OpenRead(filePath))
             {
                 var msdos20Section = ScenarioContext.Current.Get<MSDOS20Section>("MSDOS20Section");
                 inputFile.Position = PESignature.StartingPosition(msdos20Section);

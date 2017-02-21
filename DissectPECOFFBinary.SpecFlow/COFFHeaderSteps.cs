@@ -12,9 +12,13 @@ namespace DissectPECOFFBinary.SpecFlow
         public void WhenIReadInTheCOFFHeader()
         {
             var fileName = ScenarioContext.Current.Get<string>("FileName");
-            using (FileStream inputFile =
-                File.OpenRead(
-                    string.Format(@"..\..\TestArtifacts\{0}", fileName)))
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile =File.OpenRead(filePath))
             {
                 var msdos20Section = ScenarioContext.Current.Get<MSDOS20Section>("MSDOS20Section");
                 inputFile.Position = COFFHeader.StartingPosition(msdos20Section);
@@ -31,7 +35,7 @@ namespace DissectPECOFFBinary.SpecFlow
             var coffHeader = ScenarioContext.Current.Get<COFFHeader>("COFFHeader");
             Assert.AreEqual<UInt16>(machineTypeValue, coffHeader.MachineType);
         }
-        
+
         [Then(@"the NumberOfSections should be (.*)")]
         public void ThenTheNumberOfSectionsShouldBe(UInt16 numberOfSections)
         {
@@ -46,7 +50,7 @@ namespace DissectPECOFFBinary.SpecFlow
             var coffHeader = ScenarioContext.Current.Get<COFFHeader>("COFFHeader");
             Assert.AreEqual<UInt32>(pointerToSymbolTableValue, coffHeader.PointerToSymbolTable);
         }
-        
+
         [Then(@"the NumberOfSymbols should be (.*)")]
         public void ThenTheNumberOfSymbolsShouldBe(UInt32 numberOfSymbols)
         {

@@ -59,36 +59,42 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>COFFHeader.feature</DependentUpon>
     </Compile>
+    <Compile Include="COFFHeaderFeature.cs" />
     <Compile Include="COFFHeaderSteps.cs" />
     <Compile Include="COFFOptionalHeaderStandardFields.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>COFFOptionalHeaderStandardFields.feature</DependentUpon>
     </Compile>
+    <Compile Include="COFFOptionalHeaderStandardFieldsFeature.cs" />
     <Compile Include="COFFOptionalHeaderStandardFieldsSteps.cs" />
     <Compile Include="MSDOS20Section.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MSDOS20Section.feature</DependentUpon>
     </Compile>
+    <Compile Include="MSDOS20SectionFeature.cs" />
     <Compile Include="MSDOS20SectionSteps.cs" />
     <Compile Include="OptionalHeaderDataDirectories.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OptionalHeaderDataDirectories.feature</DependentUpon>
     </Compile>
+    <Compile Include="OptionalHeaderDataDirectoriesFeature.cs" />
     <Compile Include="OptionalHeaderDataDirectoriesSteps.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OptionalHeaderWindowsSpecificPE32.feature</DependentUpon>
     </Compile>
+    <Compile Include="OptionalHeaderWindowsSpecificPE32Feature.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32Steps.cs" />
     <Compile Include="PESignature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PESignature.feature</DependentUpon>
     </Compile>
+    <Compile Include="PESignatureFeature.cs" />
     <Compile Include="PESignatureSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,28 +133,72 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TestArtifacts\HelloWorld_CSC_2.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_CSC_3.5.exe" />
-    <Content Include="TestArtifacts\HelloWorld_CSC_4.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_2.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_3.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_3.5.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.5.1.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.5.2.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.5.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.6.1.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.6.2.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.6.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_4.exe" />
-    <Content Include="TestArtifacts\HelloWorld_VS_Core_1.0.dll" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_2.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0Client.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.1.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.2.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.1.exe" />
-    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.exe" />
+    <Content Include="TestArtifacts\HelloWorld_CSC_2.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_CSC_3.5.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_CSC_4.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_2.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_3.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_3.5.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.1.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.5.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.1.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.6.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_4.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_VS_Core_1.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_2.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.0Client.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.1.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.5.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.1.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestArtifacts\HelloWorld_Xamarin_4.6.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
