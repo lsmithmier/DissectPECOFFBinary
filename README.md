@@ -1,4 +1,5 @@
 # Dissect PECOFF Binary #
+[![Build status](https://ci.appveyor.com/api/projects/status/0hh34xqxu286ratc?svg=true)](https://ci.appveyor.com/project/lsmithmier/dissectpecoffbinary) [![codecov](https://codecov.io/gh/lsmithmier/DissectPECOFFBinary/branch/master/graph/badge.svg)](https://codecov.io/gh/lsmithmier/DissectPECOFFBinary)
 ## The What
 Today you can build executables that are written in C# on many 
 different platforms.  You can build them using many different 

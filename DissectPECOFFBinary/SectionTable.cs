@@ -20,7 +20,7 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0xC)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 VirtualAddress;
+        public UInt32 VirtualAddress;
 
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U4)]
@@ -32,23 +32,23 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0x18)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 PointerToRelocations;
+        public UInt32 PointerToRelocations;
 
         [FieldOffset(0x1C)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 PointerToLinenumbers;
+        public UInt32 PointerToLinenumbers;
 
         [FieldOffset(0x20)]
         [MarshalAs(UnmanagedType.U2)]
-        UInt16 NumberOfRelocations;
+        public UInt16 NumberOfRelocations;
 
         [FieldOffset(0x22)]
         [MarshalAs(UnmanagedType.U2)]
-        UInt16 NumberOfLinenumbers;
+        public UInt16 NumberOfLinenumbers;
 
         [FieldOffset(0x24)]
         [MarshalAs(UnmanagedType.U4)]
-        UInt32 Characteristics;
+        public UInt32 Characteristics;
 
         public override string ToString()
         {
