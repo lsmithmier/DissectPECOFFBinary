@@ -97,6 +97,13 @@
     <Compile Include="PESignatureFeature.cs" />
     <Compile Include="PESignatureSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionTables.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SectionTables.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SectionTablesFeature.cs" />
+    <Compile Include="SectionTablesSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -124,6 +131,10 @@
     <None Include="PESignature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PESignature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SectionTables.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SectionTables.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

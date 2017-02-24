@@ -10,6 +10,28 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct SectionTable : IPECOFFPart
     {
+        public static long StartingPosition(MSDOS20Section msdos20Section, COFFOptionalHeaderStandardFields coffOptionalHeaderStandardFields)
+        {
+            if (coffOptionalHeaderStandardFields.Magic == 0x10b)
+            {
+                return msdos20Section.OffsetToPEHeader
+                    + (Int64)Marshal.SizeOf<PESignature>()
+                    + (Int64)Marshal.SizeOf<COFFHeader>()
+                    + (Int64)Marshal.SizeOf<COFFOptionalHeaderStandardFields>()
+                    + (Int64)Marshal.SizeOf<OptionalHeaderWindowsSpecificPE32>()
+                    +(Int64)Marshal.SizeOf<OptionalHeaderDataDirectories>();
+            }
+            else
+            {
+                return msdos20Section.OffsetToPEHeader
+                    + (Int64)Marshal.SizeOf<PESignature>()
+                    + (Int64)Marshal.SizeOf<COFFHeader>()
+                    + (Int64)Marshal.SizeOf<COFFOptionalHeaderStandardFields>()
+                    + (Int64)Marshal.SizeOf<OptionalHeaderWindowsSpecificPE32Plus>()
+                    + (Int64)Marshal.SizeOf<OptionalHeaderDataDirectories>();
+            }
+        }
+
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x8)]
         public string Name;
