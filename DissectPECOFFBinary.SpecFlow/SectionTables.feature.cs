@@ -110,40 +110,355 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
         }
         
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_CSC_3_5_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_CSC_3.5.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_CSC_4_0_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_CSC_4.0.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_2_0_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_2.0.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_3_0_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_3.0.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_3_5_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_3.5.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_5_1_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.5.1.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_5_2_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.5.2.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_5_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.5.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_6_1_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.6.1.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_6_2_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.6.2.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_6_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.6.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_4_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_4.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_VS_Core_1_0_Dll()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_VS_Core_1.0.dll", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_2_0_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_2.0.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_0_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.0.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_0Client_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.0Client.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_5_1_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.5.1.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_5_2_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.5.2.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_5_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.5.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_6_1_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.6.1.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the number and t" +
+            "ypes: HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:number of tables", "3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:types of tables", ".text,.rsrc,.reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:order of tables", ".text,.rsrc,.reloc")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes_HelloWorld_Xamarin_4_6_Exe()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheNumberAndTypes("HelloWorld_Xamarin_4.6.exe", "3", ".text,.rsrc,.reloc", ".text,.rsrc,.reloc", ((string[])(null)));
+#line hidden
+        }
+        
         public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent(string fileName, string name, string virtualSize, string virtualAddress, string sizeOfRawData, string pointerToRawData, string pointerToRelocations, string pointerToLinenumbers, string numberOfRelocations, string numberOfLinenumbers, string characteristics, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Read the SectionTables from a given PECOFF binary file and check the content", exampleTags);
-#line 21
+#line 43
 this.ScenarioSetup(scenarioInfo);
-#line 22
+#line 44
  testRunner.Given(string.Format("a PECOFF binary file named {0}", fileName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 23
+#line 45
  testRunner.When("I read in the MSDOS20Section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
+#line 46
  testRunner.And("I read in the COFFHeader", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
+#line 47
  testRunner.And("I read in the COFFOptionalHeaderStandardFields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 48
  testRunner.And("I read the SectionTables", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
+#line 49
  testRunner.And(string.Format("there is a table with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
+#line 50
  testRunner.Then(string.Format("it\'s VirtualSize will be {0}", virtualSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 29
+#line 51
  testRunner.And(string.Format("it\'s VirtualAddress will be {0}", virtualAddress), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 52
  testRunner.And(string.Format("it\'s SizeOfRawData will be {0}", sizeOfRawData), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
+#line 53
  testRunner.And(string.Format("it\'s PointerToRawData will be {0}", pointerToRawData), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 32
+#line 54
  testRunner.And(string.Format("it\'s PointerToRelocations will be {0}", pointerToRelocations), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 33
+#line 55
  testRunner.And(string.Format("it\'s PointerToLinenumbers will be {0}", pointerToLinenumbers), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
+#line 56
  testRunner.And(string.Format("it\'s NumberOfRelocations will be {0}", numberOfRelocations), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
+#line 57
  testRunner.And(string.Format("it\'s NumberOfLinenumbers will be {0}", numberOfLinenumbers), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 36
+#line 58
  testRunner.And(string.Format("it\'s Characteristics will be {0}", characteristics), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -212,6 +527,1392 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant2()
         {
             this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_2.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0xA00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x3B4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant3()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_3.5.exe", ".text", "0x3B4", "0x2000", "0x400", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant4()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_3.5.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant5()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_3.5.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x3B4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant6()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_4.0.exe", ".text", "0x3B4", "0x2000", "0x400", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 7")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant7()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_4.0.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant8()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_CSC_4.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 9")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 9")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x7B0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x800")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant9()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_2.0.exe", ".text", "0x7B0", "0x2000", "0x800", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant10()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_2.0.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant11()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_2.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1200", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 12")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 12")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x7AC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x800")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant12()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.0.exe", ".text", "0x7AC", "0x2000", "0x800", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 13")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 13")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant13()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.0.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 14")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 14")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant14()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1200", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x7AC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x800")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant15()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.5.exe", ".text", "0x7AC", "0x2000", "0x800", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 16")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 16")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant16()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.5.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 17")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 17")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant17()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_3.5.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1200", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 18")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 18")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x844")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant18()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.1.exe", ".text", "0x844", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 19")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 19")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant19()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.1.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 20")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 20")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant20()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.1.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1400", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 21")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 21")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x844")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant21()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.2.exe", ".text", "0x844", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 22")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 22")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant22()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.2.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 23")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 23")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant23()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.2.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1400", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 24")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 24")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x838")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant24()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.exe", ".text", "0x838", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 25")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 25")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant25()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 26")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 26")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant26()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.5.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1400", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 27")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 27")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x844")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant27()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.1.exe", ".text", "0x844", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 28")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 28")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant28()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.1.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 29")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 29")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant29()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.1.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1400", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 30")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 30")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x830")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant30()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.2.exe", ".text", "0x830", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 31")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 31")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant31()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.2.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 32")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 32")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant32()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.2.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1200", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 33")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 33")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x838")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant33()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.exe", ".text", "0x838", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 34")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 34")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant34()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 35")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 35")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1400")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant35()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.6.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1400", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 36")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 36")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x830")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0xA00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant36()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.exe", ".text", "0x830", "0x2000", "0xA00", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 37")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 37")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant37()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 38")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 38")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant38()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_4.exe", ".reloc", "0xC", "0x6000", "0x200", "0x1200", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 39")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 39")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x800")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x800")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant39()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_Core_1.0.dll", ".text", "0x800", "0x2000", "0x800", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 40")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 40")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant40()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_Core_1.0.dll", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 41")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 41")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x1000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant41()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_VS_Core_1.0.dll", ".reloc", "0xC", "0x6000", "0x200", "0x1000", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 42")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 42")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x504")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant42()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_2.0.exe", ".text", "0x504", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant43()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_2.0.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 44")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 44")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant44()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_2.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 45")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 45")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x584")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant45()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0.exe", ".text", "0x584", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 46")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 46")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant46()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 47")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 47")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant47()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x5B4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant48()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0Client.exe", ".text", "0x5B4", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 49")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 49")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant49()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0Client.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 50")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 50")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant50()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.0Client.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 51")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 51")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x594")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant51()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.1.exe", ".text", "0x594", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 52")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 52")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant52()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.1.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 53")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 53")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant53()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.1.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 54")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 54")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x594")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant54()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.2.exe", ".text", "0x594", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 55")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 55")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant55()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.2.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 56")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 56")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant56()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.2.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 57")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 57")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x584")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant57()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.exe", ".text", "0x584", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 58")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 58")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant58()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 59")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 59")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant59()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.5.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 60")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 60")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x594")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant60()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.1.exe", ".text", "0x594", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 61")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 61")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant61()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.1.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 62")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 62")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant62()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.1.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 63")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 63")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".text")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x584")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x2000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x600")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x60000020")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant63()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.exe", ".text", "0x584", "0x2000", "0x600", "0x200", "0x0", "0x0", "0x0", "0x0", "0x60000020", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 64")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 64")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".rscs")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant64()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.exe", ".rscs", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the SectionTables from a given PECOFF binary file and check the content: Var" +
+            "iant 65")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SectionTables")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 65")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Name", ".reloc")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualSize", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VirtualAddress", "0x6000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfRawData", "0x200")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRawData", "0xC00")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PointerToLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfRelocations", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NumberOfLinenumbers", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x42000040")]
+        public virtual void ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent_Variant65()
+        {
+            this.ReadTheSectionTablesFromAGivenPECOFFBinaryFileAndCheckTheContent("HelloWorld_Xamarin_4.6.exe", ".reloc", "0xC", "0x6000", "0x200", "0xC00", "0x0", "0x0", "0x0", "0x0", "0x42000040", ((string[])(null)));
 #line hidden
         }
     }
