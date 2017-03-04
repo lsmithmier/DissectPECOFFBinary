@@ -66,8 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLIHeader.cs" />
     <Compile Include="COFFHeader.cs" />
     <Compile Include="COFFOptionalHeaderStandardFields.cs" />
+    <Compile Include="ImportAddressTable.cs" />
     <Compile Include="IPECOFFPart.cs" />
     <Compile Include="MSDOS20Section.cs" />
     <Compile Include="OptionalHeaderDataDirectories.cs" />

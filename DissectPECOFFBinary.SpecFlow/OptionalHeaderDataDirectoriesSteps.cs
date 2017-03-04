@@ -156,5 +156,21 @@ namespace DissectPECOFFBinary.SpecFlow
             var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
             Assert.AreEqual(reservedValue, optionalHeaderDataDirectories.Reserved,string.Format("Assert.AreEqual failed on Reserved.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", reservedValue, optionalHeaderDataDirectories.Reserved));
         }
+
+        [Then(@"the IAT Address should be (.*)")]
+        public void ThenTheIATAddressShouldBe(string iatAddress)
+        {
+            UInt32 iatAddressValue = Convert.ToUInt32(iatAddress, 16);
+            var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
+            Assert.AreEqual(iatAddressValue, optionalHeaderDataDirectories.IATAddress, string.Format("Assert.AreEqual failed on IAT Address.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", iatAddressValue, optionalHeaderDataDirectories.IATAddress));
+        }
+
+        [Then(@"the IAT Count should be (.*)")]
+        public void ThenTheIATCountShouldBe(string iatCount)
+        {
+            UInt32 iatCountValue = Convert.ToUInt32(iatCount, 16);
+            var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
+            Assert.AreEqual(iatCountValue, optionalHeaderDataDirectories.IATSize, string.Format("Assert.AreEqual failed on IAT Count.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", iatCountValue, optionalHeaderDataDirectories.IATSize));
+        }
     }
 }

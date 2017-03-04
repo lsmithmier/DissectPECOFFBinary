@@ -80,6 +80,16 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 IAT;
 
+        public UInt32 IATAddress
+        {
+            get { return (UInt32)(IAT & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 IATSize
+        {
+            get { return (UInt32)(IAT >> 32); }
+        }
+
         [FieldOffset(0x68)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 DelayImportDescriptor;
@@ -87,6 +97,16 @@ namespace DissectPECOFFBinary
         [FieldOffset(0x70)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 CLRRuntimeHeader;
+
+        public UInt32 CLRRuntimeHeaderAddress
+        {
+            get { return (UInt32)CLRRuntimeHeader >> 32; }
+        }
+
+        public UInt32 CLRRuntimeHeaderSize
+        {
+            get { return (UInt32)CLRRuntimeHeader & 0x00000000FFFFFFFF; }
+        }
 
         [FieldOffset(0x78)]
         [MarshalAs(UnmanagedType.U8)]

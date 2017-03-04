@@ -87,6 +87,8 @@ namespace DissectPECOFFBinary.SpecFlow
                     string delayImportDescriptor, 
                     string cLRRuntimeHeader, 
                     string reserved, 
+                    string iATAddress, 
+                    string iATCount, 
                     string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Read the OptionalHeaderDataDirectories from a given PECOFF binary file", exampleTags);
@@ -132,6 +134,10 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.And(string.Format("the CLRRuntimeHeader shoud be {0}", cLRRuntimeHeader), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
  testRunner.And(string.Format("the Reserved shoud be {0}", reserved), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 28
+ testRunner.And(string.Format("the IAT Address should be {0}", iATAddress), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
+ testRunner.And(string.Format("the IAT Count should be {0}", iATCount), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -158,9 +164,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_CSC_2_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_2.0.exe", "0x0", "0x4F0000235C", "0x2D000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_2.0.exe", "0x0", "0x4F0000235C", "0x2D000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -186,9 +194,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_CSC_3_5_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_3.5.exe", "0x0", "0x4F0000235C", "0x50800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_3.5.exe", "0x0", "0x4F0000235C", "0x50800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -214,9 +224,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_CSC_4_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_4.0.exe", "0x0", "0x4F0000235C", "0x50800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_CSC_4.0.exe", "0x0", "0x4F0000235C", "0x50800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -242,9 +254,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_2_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_2.0.exe", "0x0", "0x4F00002758", "0x61000004000", "0x0", "0x0", "0xC00006000", "0x1C00002620", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_2.0.exe", "0x0", "0x4F00002758", "0x61000004000", "0x0", "0x0", "0xC00006000", "0x1C00002620", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -270,9 +284,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_3_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.0.exe", "0x0", "0x4F00002754", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C0000261C", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.0.exe", "0x0", "0x4F00002754", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C0000261C", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -298,9 +314,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_3_5_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.5.exe", "0x0", "0x4F00002754", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C0000261C", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_3.5.exe", "0x0", "0x4F00002754", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C0000261C", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -326,9 +344,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_1_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.1.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.1.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -354,9 +374,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_2_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.2.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.2.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -382,9 +404,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_5_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.exe", "0x0", "0x4F000027E0", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A8", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.5.exe", "0x0", "0x4F000027E0", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A8", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -410,9 +434,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_1_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.1.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.1.exe", "0x0", "0x4F000027EC", "0x61800004000", "0x0", "0x0", "0xC00006000", "0x1C000026B4", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -438,9 +464,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_2_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.2.exe", "0x0", "0x4F000027D8", "0x5FC00004000", "0x0", "0x0", "0xC00006000", "0x1C000026A0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.2.exe", "0x0", "0x4F000027D8", "0x5FC00004000", "0x0", "0x0", "0xC00006000", "0x1C000026A0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -466,9 +494,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_6_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.exe", "0x0", "0x4F000027E0", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A8", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.6.exe", "0x0", "0x4F000027E0", "0x60800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A8", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -494,9 +524,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_4_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.exe", "0x0", "0x4F000027D8", "0x5F800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_4.exe", "0x0", "0x4F000027D8", "0x5F800004000", "0x0", "0x0", "0xC00006000", "0x1C000026A0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -522,9 +554,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_VS_Core_1_0_Dll()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_Core_1.0.dll", "0x0", "0x4F000027A8", "0x5B000004000", "0x0", "0x0", "0xC00006000", "0x1C00002670", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_VS_Core_1.0.dll", "0x0", "0x4F000027A8", "0x5B000004000", "0x0", "0x0", "0xC00006000", "0x1C00002670", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -550,9 +584,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_2_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_2.0.exe", "0x0", "0x4B000024B0", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_2.0.exe", "0x0", "0x4B000024B0", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -578,9 +614,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_0_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -606,9 +644,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_0Client_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0Client.exe", "0x0", "0x4B00002560", "0x3A800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.0Client.exe", "0x0", "0x4B00002560", "0x3A800004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -634,9 +674,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_1_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.1.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.1.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -662,9 +704,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_2_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.2.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.2.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -690,9 +734,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_5_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.5.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -718,9 +764,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_6_1_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.1.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.1.exe", "0x0", "0x4B00002540", "0x39000004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
         
@@ -746,9 +794,11 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DelayImportDescriptor", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CLRRuntimeHeader", "0x4800002008")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Reserved", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Address", "0x00002000")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:IAT Count", "0x8")]
         public virtual void ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile_HelloWorld_Xamarin_4_6_Exe()
         {
-            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", ((string[])(null)));
+            this.ReadTheOptionalHeaderDataDirectoriesFromAGivenPECOFFBinaryFile("HelloWorld_Xamarin_4.6.exe", "0x0", "0x4B00002530", "0x38400004000", "0x0", "0x0", "0xC00006000", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x800002000", "0x0", "0x4800002008", "0x0", "0x00002000", "0x8", ((string[])(null)));
 #line hidden
         }
     }

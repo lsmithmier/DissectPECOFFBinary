@@ -106,6 +106,13 @@ namespace DissectPECOFFBinary
                     Console.WriteLine("Raw dump of section {0}",sectionTable.Key);
                     Console.WriteLine(HexDump(buffer));
                 }
+                var importAddresses = ImportAddressTable.ReadImportAddresses(inputFile, optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                Console.WriteLine("Import Address Table");
+                Console.WriteLine("====================");
+                foreach (var importAddress in importAddresses)
+                {
+                    Console.WriteLine("   Import Address {0:X}", importAddress);
+                }
             }
         }
 

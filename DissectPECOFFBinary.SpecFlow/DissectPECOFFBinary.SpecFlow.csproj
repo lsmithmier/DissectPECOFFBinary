@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="SectionTablesFeature.cs" />
     <Compile Include="SectionTablesSteps.cs" />
+    <Compile Include="TextSection.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextSection.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TextSectionSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -135,6 +141,10 @@
     <None Include="SectionTables.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SectionTables.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TextSection.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TextSection.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
