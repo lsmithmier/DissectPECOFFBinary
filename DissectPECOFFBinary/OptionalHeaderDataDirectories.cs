@@ -100,12 +100,12 @@ namespace DissectPECOFFBinary
 
         public UInt32 CLRRuntimeHeaderAddress
         {
-            get { return (UInt32)CLRRuntimeHeader >> 32; }
+            get { return (UInt32)(CLRRuntimeHeader & 0x00000000FFFFFFFF); }
         }
 
         public UInt32 CLRRuntimeHeaderSize
         {
-            get { return (UInt32)CLRRuntimeHeader & 0x00000000FFFFFFFF; }
+            get { return (UInt32)(CLRRuntimeHeader >> 32); }
         }
 
         [FieldOffset(0x78)]

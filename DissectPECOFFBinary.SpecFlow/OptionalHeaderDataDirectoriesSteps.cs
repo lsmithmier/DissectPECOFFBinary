@@ -172,5 +172,21 @@ namespace DissectPECOFFBinary.SpecFlow
             var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
             Assert.AreEqual(iatCountValue, optionalHeaderDataDirectories.IATSize, string.Format("Assert.AreEqual failed on IAT Count.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", iatCountValue, optionalHeaderDataDirectories.IATSize));
         }
+
+        [Then(@"the CLR Runtime Header Address should be (.*)")]
+        public void ThenTheCLRRuntimeHeaderAddressShouldBe(string address)
+        {
+            UInt32 addressValue = Convert.ToUInt32(address, 16);
+            var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
+            Assert.AreEqual(addressValue, optionalHeaderDataDirectories.CLRRuntimeHeaderAddress, string.Format("Assert.AreEqual failed on CLRRuntimeHeaderAddress.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", addressValue, optionalHeaderDataDirectories.CLRRuntimeHeaderAddress));
+        }
+
+        [Then(@"the CLR Runtime Header Size should be (.*)")]
+        public void ThenTheCLRRuntimeHeaderSizeShouldBe(string size)
+        {
+            UInt32 sizeValue = Convert.ToUInt32(size, 16);
+            var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
+            Assert.AreEqual(sizeValue, optionalHeaderDataDirectories.CLRRuntimeHeaderSize, string.Format("Assert.AreEqual failed on CLRRuntimeHeaderSize.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", sizeValue, optionalHeaderDataDirectories.CLRRuntimeHeaderSize));
+        }
     }
 }

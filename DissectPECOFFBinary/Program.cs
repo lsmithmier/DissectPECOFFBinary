@@ -113,6 +113,13 @@ namespace DissectPECOFFBinary
                 {
                     Console.WriteLine("   Import Address {0:X}", importAddress);
                 }
+                inputFile.Position = CLRHeader.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                WriteStartingAddress(inputFile);
+                CLRHeader?
+                    clrHeader = inputFile.
+                        ReadStructure<CLRHeader>();
+                Console.WriteLine(
+                    clrHeader.ToString());
             }
         }
 
