@@ -14,7 +14,7 @@ namespace DissectPECOFFBinary
                     &&
                   optionalHeaderDataDirectories.IATAddress <= sectionTable.VirtualAddress + sectionTable.VirtualSize)
                 {
-                    return sectionTable.PointerToRawData + sectionTable.VirtualAddress - optionalHeaderDataDirectories.IATAddress;
+                    return sectionTable.PointerToRawData + optionalHeaderDataDirectories.IATAddress - sectionTable.VirtualAddress ;
                 }
             }
             throw new ArgumentOutOfRangeException("OptionalHeaderDataDirectories IAT Address", "The OptionalHeaderDataDirectories IAT Address did not fall within the address range of any of the Section Tables");

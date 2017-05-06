@@ -16,7 +16,7 @@ namespace DissectPECOFFBinary
                     &&
                   optionalHeaderDataDirectories.CLRRuntimeHeaderAddress <= sectionTable.VirtualAddress + sectionTable.VirtualSize)
                 {
-                    return sectionTable.PointerToRawData + sectionTable.VirtualAddress - optionalHeaderDataDirectories.CLRRuntimeHeaderAddress;
+                    return sectionTable.PointerToRawData + optionalHeaderDataDirectories.CLRRuntimeHeaderAddress - sectionTable.VirtualAddress;
                 }
             }
             throw new ArgumentOutOfRangeException("OptionalHeaderDataDirectories CLR Runtime Header Address", "The OptionalHeaderDataDirectories CLR Runtime Header Address did not fall within the address range of any of the Section Tables");

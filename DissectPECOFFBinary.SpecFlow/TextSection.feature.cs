@@ -455,21 +455,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_2.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_2.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2390")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x2EC00002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2EC00002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_CSC_2_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_2.0.exe", "0x0", "0x0", "0x0", "0x2390", "0x48", "0x50002", "0x2EC00002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_2.0.exe", "0x48", "0x2", "0x5", "0x2EC00002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -478,21 +478,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2390")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x2EC00002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2EC00002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_CSC_3_5_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_3.5.exe", "0x0", "0x0", "0x0", "0x2390", "0x48", "0x50002", "0x2EC00002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_3.5.exe", "0x48", "0x2", "0x5", "0x2EC00002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -501,21 +501,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2390")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x2EC00002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2EC00002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_CSC_4_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_4.0.exe", "0x0", "0x0", "0x0", "0x2390", "0x48", "0x50002", "0x2EC00002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_CSC_4.0.exe", "0x48", "0x2", "0x5", "0x2EC00002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -524,21 +524,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x278C")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x5B000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x5B000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_2_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_2.0.exe", "0x0", "0x0", "0x0", "0x278C", "0x48", "0x50002", "0x5B000002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_2.0.exe", "0x48", "0x2", "0x5", "0x5B000002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -547,21 +547,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2788")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x5AC00002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x5AC00002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_3_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_3.0.exe", "0x0", "0x0", "0x0", "0x2788", "0x48", "0x50002", "0x5AC00002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_3.0.exe", "0x48", "0x2", "0x5", "0x5AC00002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -570,21 +570,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2788")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x5AC00002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x5AC00002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_3_5_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_3.5.exe", "0x0", "0x0", "0x0", "0x2788", "0x48", "0x50002", "0x5AC00002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_3.5.exe", "0x48", "0x2", "0x5", "0x5AC00002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -593,21 +593,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2820")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x64400002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x64400002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_5_1_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.1.exe", "0x0", "0x0", "0x0", "0x2820", "0x48", "0x50002", "0x64400002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.1.exe", "0x48", "0x2", "0x5", "0x64400002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -616,21 +616,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2820")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x64400002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x64400002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_5_2_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.2.exe", "0x0", "0x0", "0x0", "0x2820", "0x48", "0x50002", "0x64400002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.2.exe", "0x48", "0x2", "0x5", "0x64400002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -639,21 +639,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2814")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x63800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x63800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_5_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.exe", "0x0", "0x0", "0x0", "0x2814", "0x48", "0x50002", "0x63800002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.5.exe", "0x48", "0x2", "0x5", "0x63800002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -662,21 +662,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2820")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x64400002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x64400002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_6_1_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.1.exe", "0x0", "0x0", "0x0", "0x2820", "0x48", "0x50002", "0x64400002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.1.exe", "0x48", "0x2", "0x5", "0x64400002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -685,21 +685,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x280C")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x63000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x63000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_6_2_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.2.exe", "0x0", "0x0", "0x0", "0x280C", "0x48", "0x50002", "0x63000002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.2.exe", "0x48", "0x2", "0x5", "0x63000002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -708,21 +708,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2814")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x63800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100020003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x63800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x20003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_6_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.exe", "0x0", "0x0", "0x0", "0x2814", "0x48", "0x50002", "0x63800002070", "0x600000100020003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.6.exe", "0x48", "0x2", "0x5", "0x63800002070", "0x20003", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -731,21 +731,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x280C")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x63000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x63000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_4_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.exe", "0x0", "0x0", "0x0", "0x280C", "0x48", "0x50002", "0x63000002070", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_4.exe", "0x48", "0x2", "0x5", "0x63000002070", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -754,21 +754,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x27DC")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x5CC000020A4")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000100000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x5CC000020A4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_VS_Core_1_0_Dll()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_Core_1.0.dll", "0x0", "0x0", "0x0", "0x27DC", "0x48", "0x50002", "0x5CC000020A4", "0x600000100000001", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_VS_Core_1.0.dll", "0x48", "0x2", "0x5", "0x5CC000020A4", "0x1", "0x6000001", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -777,21 +777,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x24E0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x44000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x44000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_2_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_2.0.exe", "0x0", "0x0", "0x0", "0x24E0", "0x48", "0x50002", "0x44000002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_2.0.exe", "0x48", "0x2", "0x5", "0x44000002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -800,21 +800,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2560")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0.exe", "0x0", "0x0", "0x0", "0x2560", "0x48", "0x50002", "0x4C000002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0.exe", "0x48", "0x2", "0x5", "0x4C000002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -823,21 +823,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2590")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4E800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4E800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0Client_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0Client.exe", "0x0", "0x0", "0x0", "0x2590", "0x48", "0x50002", "0x4E800002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0Client.exe", "0x48", "0x2", "0x5", "0x4E800002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -846,21 +846,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2570")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_1_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.1.exe", "0x0", "0x0", "0x0", "0x2570", "0x48", "0x50002", "0x4C800002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.1.exe", "0x48", "0x2", "0x5", "0x4C800002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -869,21 +869,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2570")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_2_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.2.exe", "0x0", "0x0", "0x0", "0x2570", "0x48", "0x50002", "0x4C800002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.2.exe", "0x48", "0x2", "0x5", "0x4C800002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -892,21 +892,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2560")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.exe", "0x0", "0x0", "0x0", "0x2560", "0x48", "0x50002", "0x4C000002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.exe", "0x48", "0x2", "0x5", "0x4C000002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -915,21 +915,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2570")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C800002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C800002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_1_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.1.exe", "0x0", "0x0", "0x0", "0x2570", "0x48", "0x50002", "0x4C800002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.1.exe", "0x48", "0x2", "0x5", "0x4C800002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
         
@@ -938,21 +938,21 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x2560")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x48")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x50002")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x4C000002070")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x600000200000003")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Cb", "0x48")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Runtime Version", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Runtime Version", "0x5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Metadata", "0x4C000002070")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Flags", "0x3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Entry Point Token/Entry Point RVA", "0x6000002")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Resources", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Strong Name Signature", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Code Manager Table", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:VTable Fixups", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Export Address Table Jumps", "0x0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Managed Native Header", "0x0")]
         public virtual void ReadTheCLRHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_Exe()
         {
-            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "0x0", "0x0", "0x0", "0x2560", "0x48", "0x50002", "0x4C000002070", "0x600000200000003", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+            this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "0x48", "0x2", "0x5", "0x4C000002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
     }
