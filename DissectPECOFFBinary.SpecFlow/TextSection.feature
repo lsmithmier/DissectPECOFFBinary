@@ -85,3 +85,44 @@ Examples:
 	| HelloWorld_Xamarin_4.5.exe       | 0x48 | 0x2                   | 0x5                   | 0x4C000002070 | 0x3     | 0x6000002                         | 0x0       | 0x0                   | 0x0                | 0x0           | 0x0                        | 0x0                   |
 	| HelloWorld_Xamarin_4.6.1.exe     | 0x48 | 0x2                   | 0x5                   | 0x4C800002070 | 0x3     | 0x6000002                         | 0x0       | 0x0                   | 0x0                | 0x0           | 0x0                        | 0x0                   |
 	| HelloWorld_Xamarin_4.6.exe       | 0x48 | 0x2                   | 0x5                   | 0x4C000002070 | 0x3     | 0x6000002                         | 0x0       | 0x0                   | 0x0                | 0x0           | 0x0                        | 0x0                   |
+
+Scenario Outline: Read the Debug Directory from a file check values
+	Given a PECOFF binary file named <File Name>
+	When I read in the MSDOS20Section
+	And I read in the COFFHeader
+	And I read in the COFFOptionalHeaderStandardFields
+	And I read in the OptionalHeaderDataDirectories
+	And I read the SectionTables
+	And I read the Debug Directory
+	Then the Debug Characteristics should be <Characteristics>
+	And the Debug TimeDateStamp should be <TimeDateStamp>
+	And the Debug Major Version should be <Major Version>
+	And the Debug Minor Version should be <Minor Version>
+	And the Debug Type should be <Type>
+	And the Debug SizeOfData should be <SizeOfData>
+	And the Debug AddressOfRawData should be <AddressOfRawData>
+
+Examples: 
+	| File Name                        | Characteristics | TimeDateStamp | Major Version | Minor Version | Type | SizeOfData | AddressOfRawData |
+	| HelloWorld_CSC_2.0.exe           | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_CSC_3.5.exe           | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_CSC_4.0.exe           | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_VS_2.0.exe            | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x263C           |
+	| HelloWorld_VS_3.0.exe            | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x2638           |
+	| HelloWorld_VS_3.5.exe            | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x2638           |
+	| HelloWorld_VS_4.5.1.exe          | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26D0           |
+	| HelloWorld_VS_4.5.2.exe          | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26D0           |
+	| HelloWorld_VS_4.5.exe            | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26C4           |
+	| HelloWorld_VS_4.6.1.exe          | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26D0           |
+	| HelloWorld_VS_4.6.2.exe          | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26BC           |
+	| HelloWorld_VS_4.6.exe            | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26C4           |
+	| HelloWorld_VS_4.exe              | 0x0             | 0x586C5B43    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x26BC           |
+	| HelloWorld_VS_Core_1.0.dll       | 0x0             | 0x586B021F    | 0x0           | 0x0           | 0x2  | 0x11C      | 0x268C           |
+	| HelloWorld_Xamarin_2.0.exe       | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.0.exe       | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.0Client.exe | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.5.1.exe     | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.5.2.exe     | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.5.exe       | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.6.1.exe     | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |
+	| HelloWorld_Xamarin_4.6.exe       | 0x0             | 0x0           | 0x0           | 0x0           | 0x0  | 0x0        | 0x0              |

@@ -69,6 +69,8 @@
     <Compile Include="CLRHeader.cs" />
     <Compile Include="COFFHeader.cs" />
     <Compile Include="COFFOptionalHeaderStandardFields.cs" />
+    <Compile Include="DebugDirectory.cs" />
+    <Compile Include="ExceptionHandlingTable.cs" />
     <Compile Include="ImportAddressTable.cs" />
     <Compile Include="IPECOFFPart.cs" />
     <Compile Include="MSDOS20Section.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SectionTable.cs" />
     <Compile Include="StreamExtensions.cs" />
+    <Compile Include="StrongNameSignature.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

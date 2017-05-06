@@ -112,6 +112,8 @@ namespace DissectPECOFFBinary
                 {
                     Console.WriteLine("   Import Address {0:X}", importAddress);
                 }
+
+                //CLR Header
                 inputFile.Position = CLRHeader.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
                 WriteStartingAddress(inputFile);
                 CLRHeader?
@@ -119,6 +121,41 @@ namespace DissectPECOFFBinary
                         ReadStructure<CLRHeader>();
                 Console.WriteLine(
                     clrHeader.ToString());
+
+                //Strong Name Signature
+                StrongNameSignature? strongNameSignature;
+                if (clrHeader.Value.StrongNameSignature != 0)
+                {
+                    inputFile.Position = StrongNameSignature.StartingPosition(clrHeader.Value, sectionTables.Values.ToList());
+                    WriteStartingAddress(inputFile);
+                    strongNameSignature = inputFile.
+                            ReadStructure<StrongNameSignature>();
+                    Console.WriteLine(
+                        strongNameSignature.ToString());
+                }
+
+                //IL Code and Managed Structure Exception Handling Tables 
+                ExceptionHandlingTable? exceptionHandlingTable;
+                if (optionalHeaderDataDirectories.Value.ExceptionTable != 0)
+                {
+                    inputFile.Position = ExceptionHandlingTable.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                    WriteStartingAddress(inputFile);
+                    exceptionHandlingTable = inputFile.
+                            ReadStructure<ExceptionHandlingTable>();
+                    Console.WriteLine(
+                        exceptionHandlingTable.ToString());
+                }
+
+                //Debug Directory
+                DebugDirectory? debugDirectory;
+                if (optionalHeaderDataDirectories.Value.Debug != 0)
+                {
+                    inputFile.Position = DebugDirectory.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                    WriteStartingAddress(inputFile);
+                    debugDirectory = inputFile.ReadStructure<DebugDirectory>();
+                    Console.WriteLine(
+                        debugDirectory.ToString());
+                }
             }
         }
 

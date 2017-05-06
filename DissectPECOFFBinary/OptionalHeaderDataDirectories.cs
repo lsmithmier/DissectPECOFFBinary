@@ -44,6 +44,16 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 ExceptionTable;
 
+        public UInt32 ExceptionTableAddress
+        {
+            get { return (UInt32)(ExceptionTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 ExceptionTableSize
+        {
+            get { return (UInt32)(ExceptionTable >> 32); }
+        }
+
         [FieldOffset(0x20)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 CertificateTable;
@@ -55,6 +65,16 @@ namespace DissectPECOFFBinary
         [FieldOffset(0x30)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 Debug;
+
+        public UInt32 DebugAddress
+        {
+            get { return (UInt32)(Debug & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 DebugSize
+        {
+            get { return (UInt32)(Debug >> 32); }
+        }
 
         [FieldOffset(0x38)]
         [MarshalAs(UnmanagedType.U8)]

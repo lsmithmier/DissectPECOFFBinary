@@ -49,6 +49,34 @@ namespace DissectPECOFFBinary.SpecFlow
             }
         }
 
+        [When(@"I read the Debug Directory")]
+        public void WhenIReadTheDebugDirectory()
+        {
+            var fileName = ScenarioContext.Current.Get<string>("FileName");
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            try
+            {
+                using (FileStream inputFile = File.OpenRead(filePath))
+                {
+                    var optionalHeaderDataDirectories = ScenarioContext.Current.Get<OptionalHeaderDataDirectories>("OptionalHeaderDataDirectories");
+                    var sectionTables = ScenarioContext.Current.Get<List<SectionTable>>("SectionTables");
+                    inputFile.Position = DebugDirectory.StartingPosition(optionalHeaderDataDirectories, sectionTables);
+                    DebugDirectory? debugDirectory =
+                        inputFile.ReadStructure<DebugDirectory>();
+                    ScenarioContext.Current.Add("DebugDirectory", debugDirectory.Value);
+                }
+            }
+            catch
+            {
+                ScenarioContext.Current.Add("DebugDirectory", new DebugDirectory { });
+            }
+        }
+
         [Then(@"the number of entries should be (.*)")]
         public void ThenTheNumberOfEntriesShouldBe(string iatSize)
         {
@@ -163,6 +191,62 @@ namespace DissectPECOFFBinary.SpecFlow
             UInt64 managedNativeHeaderValue = Convert.ToUInt64(managedNativeHeader, 16);
             var clrHeader = ScenarioContext.Current.Get<CLRHeader>("CLRHeader");
             Assert.AreEqual(managedNativeHeaderValue, clrHeader.ManagedNativeHeader, string.Format("Assert.AreEqual failed on CLRHeader ManagedNativeHeader.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, clrHeader.ManagedNativeHeader));
+        }
+
+        [Then(@"the Debug Characteristics should be (.*)")]
+        public void ThenTheDebugCharacteristicsShouldBe(string characteristics)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(characteristics, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.Characteristics, string.Format("Assert.AreEqual failed on DebugDirectory Characteristics.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.Characteristics));
+        }
+
+        [Then(@"the Debug TimeDateStamp should be (.*)")]
+        public void ThenTheDebugTimeDateStampShouldBe(string timeDateStamp)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(timeDateStamp, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.TimeDateStamp, string.Format("Assert.AreEqual failed on DebugDirectory TimeDateStamp.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.TimeDateStamp));
+        }
+
+        [Then(@"the Debug Major Version should be (.*)")]
+        public void ThenTheDebugMajorVersionShouldBe(string majorVersion)
+        {
+            UInt16 managedNativeHeaderValue = Convert.ToUInt16(majorVersion, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.MajorVersion, string.Format("Assert.AreEqual failed on DebugDirectory MajorVersion.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.MajorVersion));
+        }
+
+        [Then(@"the Debug Minor Version should be (.*)")]
+        public void ThenTheDebugMinorVersionShouldBe(string minorVersion)
+        {
+            UInt16 managedNativeHeaderValue = Convert.ToUInt16(minorVersion, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.MinorVersion, string.Format("Assert.AreEqual failed on DebugDirectory MinorVersion.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.MinorVersion));
+        }
+
+        [Then(@"the Debug Type should be (.*)")]
+        public void ThenTheDebugTypeShouldBe(string type)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(type, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.Type, string.Format("Assert.AreEqual failed on DebugDirectory Type.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.Type));
+        }
+
+        [Then(@"the Debug SizeOfData should be (.*)")]
+        public void ThenTheDebugSizeOfDataShouldBe(string sizeOfData)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(sizeOfData, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.SizeOfData, string.Format("Assert.AreEqual failed on DebugDirectory SizeOfData.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.SizeOfData));
+        }
+
+        [Then(@"the Debug AddressOfRawData should be (.*)")]
+        public void ThenTheDebugAddressOfRawDataShouldBe(string addressOfRawData)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(addressOfRawData, 16);
+            var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+            Assert.AreEqual(managedNativeHeaderValue, debugDirectory.AddressOfRawData, string.Format("Assert.AreEqual failed on DebugDirectory AddressOfRawData.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.AddressOfRawData));
         }
     }
 }

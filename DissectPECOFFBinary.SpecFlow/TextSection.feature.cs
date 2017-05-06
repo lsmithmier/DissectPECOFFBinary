@@ -955,6 +955,440 @@ this.ScenarioSetup(scenarioInfo);
             this.ReadTheCLRHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "0x48", "0x2", "0x5", "0x4C000002070", "0x3", "0x6000002", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
+        
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues(string fileName, string characteristics, string timeDateStamp, string majorVersion, string minorVersion, string type, string sizeOfData, string addressOfRawData, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Read the Debug Directory from a file check values", exampleTags);
+#line 89
+this.ScenarioSetup(scenarioInfo);
+#line 90
+ testRunner.Given(string.Format("a PECOFF binary file named {0}", fileName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 91
+ testRunner.When("I read in the MSDOS20Section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 92
+ testRunner.And("I read in the COFFHeader", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 93
+ testRunner.And("I read in the COFFOptionalHeaderStandardFields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 94
+ testRunner.And("I read in the OptionalHeaderDataDirectories", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 95
+ testRunner.And("I read the SectionTables", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 96
+ testRunner.And("I read the Debug Directory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 97
+ testRunner.Then(string.Format("the Debug Characteristics should be {0}", characteristics), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 98
+ testRunner.And(string.Format("the Debug TimeDateStamp should be {0}", timeDateStamp), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 99
+ testRunner.And(string.Format("the Debug Major Version should be {0}", majorVersion), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 100
+ testRunner.And(string.Format("the Debug Minor Version should be {0}", minorVersion), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 101
+ testRunner.And(string.Format("the Debug Type should be {0}", type), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 102
+ testRunner.And(string.Format("the Debug SizeOfData should be {0}", sizeOfData), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 103
+ testRunner.And(string.Format("the Debug AddressOfRawData should be {0}", addressOfRawData), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_CSC_2_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_CSC_2.0.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_CSC_3_5_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_CSC_3.5.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_CSC_4_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_CSC_4.0.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x263C")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_2_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_2.0.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x263C", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x2638")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_3_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_3.0.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x2638", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x2638")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_3_5_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_3.5.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x2638", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26D0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_5_1_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.5.1.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26D0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26D0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_5_2_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.5.2.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26D0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26C4")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_5_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.5.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26C4", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26D0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_6_1_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.6.1.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26D0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26BC")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_6_2_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.6.2.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26BC", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26C4")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_6_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.6.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26C4", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586C5B43")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x26BC")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_4_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_4.exe", "0x0", "0x586C5B43", "0x0", "0x0", "0x2", "0x11C", "0x26BC", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x586B021F")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x11C")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x268C")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_VS_Core_1_0_Dll()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_VS_Core_1.0.dll", "0x0", "0x586B021F", "0x0", "0x0", "0x2", "0x11C", "0x268C", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_2_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_2.0.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_0_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.0.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.0Client.e" +
+            "xe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_0Client_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.0Client.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_5_1_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.5.1.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_5_2_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.5.2.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_5_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.5.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_6_1_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.6.1.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the Debug Directory from a file check values: HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Characteristics", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:TimeDateStamp", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Major Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Minor Version", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Type", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:SizeOfData", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressOfRawData", "0x0")]
+        public virtual void ReadTheDebugDirectoryFromAFileCheckValues_HelloWorld_Xamarin_4_6_Exe()
+        {
+            this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore
