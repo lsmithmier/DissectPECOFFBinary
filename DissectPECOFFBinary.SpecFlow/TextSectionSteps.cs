@@ -76,6 +76,39 @@ namespace DissectPECOFFBinary.SpecFlow
                 ScenarioContext.Current.Add("DebugDirectory", new DebugDirectory { });
             }
         }
+        [When(@"I read the CodeView Header")]
+        public void WhenIReadTheCodeViewHeader()
+        {
+            var fileName = ScenarioContext.Current.Get<string>("FileName");
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            try
+            {
+                using (FileStream inputFile = File.OpenRead(filePath))
+                {
+                    var sectionTables = ScenarioContext.Current.Get<List<SectionTable>>("SectionTables");
+                    var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
+                    if (debugDirectory.PointerToRawData != 0)
+                    {
+                        inputFile.Position = CodeViewHeader.StartingPosition(debugDirectory, sectionTables);
+                        CodeViewHeader? codeViewHeader =
+                            inputFile.ReadStructure<CodeViewHeader>();
+                        ScenarioContext.Current.Add("CodeViewHeader", codeViewHeader.Value);
+                    } else
+                    {
+                        ScenarioContext.Current.Add("CodeViewHeader", new CodeViewHeader { });
+                    }
+                }
+            }
+            catch
+            {
+                ScenarioContext.Current.Add("CodeViewHeader", new CodeViewHeader { });
+            }
+        }
 
         [Then(@"the number of entries should be (.*)")]
         public void ThenTheNumberOfEntriesShouldBe(string iatSize)
@@ -248,5 +281,47 @@ namespace DissectPECOFFBinary.SpecFlow
             var debugDirectory = ScenarioContext.Current.Get<DebugDirectory>("DebugDirectory");
             Assert.AreEqual(managedNativeHeaderValue, debugDirectory.AddressOfRawData, string.Format("Assert.AreEqual failed on DebugDirectory AddressOfRawData.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, debugDirectory.AddressOfRawData));
         }
+
+        [Then(@"the CvSignature should be (.*)")]
+        public void ThenTheCvSignatureShouldBe(string cvSignature)
+        {
+            if (string.IsNullOrEmpty(cvSignature))
+            {
+                cvSignature = null;
+            }
+            var codeViewHeader= ScenarioContext.Current.Get<CodeViewHeader>("CodeViewHeader");
+            Assert.AreEqual(cvSignature, codeViewHeader.CvSignature, string.Format("Assert.AreEqual failed on CodeViewHeader CvSignature.  Expected: <{0}>.  Actual: <{1}>", cvSignature, codeViewHeader.CvSignature));
+        }
+
+        [Then(@"the Signature should be (.*)")]
+        public void ThenTheSignatureShouldBe(Guid signature)
+        {
+            var codeViewHeader = ScenarioContext.Current.Get<CodeViewHeader>("CodeViewHeader");
+            Assert.AreEqual(signature, codeViewHeader.Signature, string.Format("Assert.AreEqual failed on CodeViewHeader Signature.  Expected: <{0}>.  Actual: <{1}>", signature, codeViewHeader.Signature));
+        }
+
+        [Then(@"the Age should be (.*)")]
+        public void ThenTheAgeShouldBe(string age)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(age, 16);
+            var codeViewHeader = ScenarioContext.Current.Get<CodeViewHeader>("CodeViewHeader");
+            Assert.AreEqual(managedNativeHeaderValue, codeViewHeader.Age, string.Format("Assert.AreEqual failed on CodeViewHeader Age.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, codeViewHeader.Age));
+        }
+
+        [Then(@"the PdbFileName should be '(.*)'")]
+        public void ThenThePdbFileNameShouldBe(string pdbFileName)
+        {
+            if (string.IsNullOrEmpty(pdbFileName))
+            {
+                pdbFileName = null;
+            } else
+            {
+                //Ok, this is strange, but if I put the full path in as it should be then SpecFlow tries to parse it differently.  It might be a Gherkin keyword or something, but this is a workaround.
+                pdbFileName = pdbFileName.Replace("~", "netcoreapp1");
+            }
+            var codeViewHeader = ScenarioContext.Current.Get<CodeViewHeader>("CodeViewHeader");
+            Assert.AreEqual(pdbFileName, codeViewHeader.PdbFileName, string.Format("Assert.AreEqual failed on CodeViewHeader PdbFileName.  Expected: <{0}>.  Actual: <{1}>", pdbFileName, codeViewHeader.PdbFileName));
+        }
+
     }
 }

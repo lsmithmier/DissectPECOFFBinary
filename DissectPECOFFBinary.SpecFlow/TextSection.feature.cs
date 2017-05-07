@@ -1389,6 +1389,372 @@ this.ScenarioSetup(scenarioInfo);
             this.ReadTheDebugDirectoryFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", "0x0", ((string[])(null)));
 #line hidden
         }
+        
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues(string fileName, string cvSignature, string signature, string age, string pdbFileName, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Read the CodeViewHeader from a file check values", exampleTags);
+#line 130
+this.ScenarioSetup(scenarioInfo);
+#line 131
+ testRunner.Given(string.Format("a PECOFF binary file named {0}", fileName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 132
+ testRunner.When("I read in the MSDOS20Section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 133
+ testRunner.And("I read in the COFFHeader", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 134
+ testRunner.And("I read in the COFFOptionalHeaderStandardFields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 135
+ testRunner.And("I read in the OptionalHeaderDataDirectories", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 136
+ testRunner.And("I read the SectionTables", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 137
+ testRunner.And("I read the Debug Directory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 138
+ testRunner.And("I read the CodeView Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 139
+ testRunner.Then(string.Format("the CvSignature should be {0}", cvSignature), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 140
+ testRunner.And(string.Format("the Signature should be {0}", signature), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 141
+ testRunner.And(string.Format("the Age should be {0}", age), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 142
+ testRunner.And(string.Format("the PdbFileName should be \'{0}\'", pdbFileName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_CSC_2_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_CSC_2.0.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_CSC_3_5_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_CSC_3.5.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_CSC_4_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_CSC_4.0.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "9d262c59-dbb1-4517-866a-e5a7f2babb32")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_VS_2.0\\obj\\Release\\HelloWorld_VS_2.0.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_2_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_2.0.exe", "RSDS", "9d262c59-dbb1-4517-866a-e5a7f2babb32", "1", "D:\\Source\\HelloWorld\\HelloWorld_VS_2.0\\obj\\Release\\HelloWorld_VS_2.0.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "875cbf0a-0cad-44f0-a131-9844c3a8be11")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_3.0\\obj\\Release\\HelloWorld_VS_3.0.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_3_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_3.0.exe", "RSDS", "875cbf0a-0cad-44f0-a131-9844c3a8be11", "1", "D:\\Source\\HelloWorld\\HelloWorld_3.0\\obj\\Release\\HelloWorld_VS_3.0.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "fea38570-ba5f-4ea1-8d2f-c1fea71fca9f")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_3.5\\obj\\Release\\HelloWorld_VS_3.5.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_3_5_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_3.5.exe", "RSDS", "fea38570-ba5f-4ea1-8d2f-c1fea71fca9f", "1", "D:\\Source\\HelloWorld\\HelloWorld_3.5\\obj\\Release\\HelloWorld_VS_3.5.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "3de14e5f-9600-447e-941b-347ee0736fb0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4.5.1\\obj\\Release\\HelloWorld_VS_4.5.1.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_5_1_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.5.1.exe", "RSDS", "3de14e5f-9600-447e-941b-347ee0736fb0", "1", "D:\\Source\\HelloWorld\\HelloWorld_4.5.1\\obj\\Release\\HelloWorld_VS_4.5.1.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "873c0c33-52e9-4c04-a817-a0225f03579c")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4.5.2\\obj\\Release\\HelloWorld_VS_4.5.2.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_5_2_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.5.2.exe", "RSDS", "873c0c33-52e9-4c04-a817-a0225f03579c", "1", "D:\\Source\\HelloWorld\\HelloWorld_4.5.2\\obj\\Release\\HelloWorld_VS_4.5.2.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "7be5edb3-7e51-4533-9f28-bf7b207ab22c")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4.5\\obj\\Release\\HelloWorld_VS_4.5.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_5_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.5.exe", "RSDS", "7be5edb3-7e51-4533-9f28-bf7b207ab22c", "1", "D:\\Source\\HelloWorld\\HelloWorld_4.5\\obj\\Release\\HelloWorld_VS_4.5.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "a1e697d6-2db5-43ba-9e2f-ad8e30a09c13")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4.6.1\\obj\\Release\\HelloWorld_VS_4.6.1.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_6_1_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.6.1.exe", "RSDS", "a1e697d6-2db5-43ba-9e2f-ad8e30a09c13", "1", "D:\\Source\\HelloWorld\\HelloWorld_4.6.1\\obj\\Release\\HelloWorld_VS_4.6.1.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "02173892-8a8a-43dd-aa4c-7b8cc1af10e0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_VS_4.6.2\\obj\\Release\\HelloWorld_VS_4.6.2.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_6_2_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.6.2.exe", "RSDS", "02173892-8a8a-43dd-aa4c-7b8cc1af10e0", "1", "D:\\Source\\HelloWorld\\HelloWorld_VS_4.6.2\\obj\\Release\\HelloWorld_VS_4.6.2.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "e24c3f67-f504-4ce8-94b2-204e4cdce7e8")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4.6\\obj\\Release\\HelloWorld_VS_4.6.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_6_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.6.exe", "RSDS", "e24c3f67-f504-4ce8-94b2-204e4cdce7e8", "1", "D:\\Source\\HelloWorld\\HelloWorld_4.6\\obj\\Release\\HelloWorld_VS_4.6.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "0590a9a9-7279-4c01-bcbd-64c648b238dd")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_4\\obj\\Release\\HelloWorld_VS_4.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_4_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_4.exe", "RSDS", "0590a9a9-7279-4c01-bcbd-64c648b238dd", "1", "D:\\Source\\HelloWorld\\HelloWorld_4\\obj\\Release\\HelloWorld_VS_4.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "RSDS")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "ae8dc3e2-b3d7-490a-a1b9-2bd7e3f9c53a")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "D:\\Source\\HelloWorld\\HelloWorld_VS_Core_1.0\\bin\\Release\\~.0\\HelloWorld_VS_Core_1." +
+            "0.pdb")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_VS_Core_1_0_Dll()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_VS_Core_1.0.dll", "RSDS", "ae8dc3e2-b3d7-490a-a1b9-2bd7e3f9c53a", "1", "D:\\Source\\HelloWorld\\HelloWorld_VS_Core_1.0\\bin\\Release\\~.0\\HelloWorld_VS_Core_1." +
+                    "0.pdb", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_2_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_2.0.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.0Client.ex" +
+            "e")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0Client_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0Client.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_1_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.1.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_2_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.2.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_1_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.1.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the CodeViewHeader from a file check values: HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CvSignature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Signature", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Age", "0x0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:PdbFileName", "")]
+        public virtual void ReadTheCodeViewHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_Exe()
+        {
+            this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "", "", "0x0", "", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

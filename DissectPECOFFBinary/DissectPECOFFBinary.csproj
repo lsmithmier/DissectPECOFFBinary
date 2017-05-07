@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLRHeader.cs" />
+    <Compile Include="CodeViewHeader.cs" />
     <Compile Include="COFFHeader.cs" />
     <Compile Include="COFFOptionalHeaderStandardFields.cs" />
     <Compile Include="DebugDirectory.cs" />

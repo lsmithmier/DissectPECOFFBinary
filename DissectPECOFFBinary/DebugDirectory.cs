@@ -106,8 +106,23 @@ namespace DissectPECOFFBinary
                 case 6:
                     decodedType = "IMAGE_DEBUG_TYPE_FIXUP"; //Fixup information.
                     break;
+                case 7:
+                    decodedType = "IMAGE_DEBUG_TYPE_OMAP_TO_SRC"; //The mapping from an RVA in image to an RVA in source image.
+                    break;
+                case 8:
+                    decodedType = "IMAGE_DEBUG_TYPE_OMAP_FROM_SRC"; //The mapping from an RVA in source image to an RVA in image.
+                    break;
                 case 9:
                     decodedType = "IMAGE_DEBUG_TYPE_BORLAND"; //Borland debugging information.
+                    break;
+                case 10:
+                    decodedType = "IMAGE_DEBUG_TYPE_RESERVED10"; //Reserved.
+                    break;
+                case 11:
+                    decodedType = "IMAGE_DEBUG_TYPE_CLSID"; //Reserved.
+                    break;
+                case 16:
+                    decodedType = "IMAGE_DEBUG_TYPE_REPRO"; //PE determinism or reproducibility.
                     break;
                 default:
                     decodedType = "Undefined"; //Should not be hit

@@ -148,6 +148,7 @@ namespace DissectPECOFFBinary
 
                 //Debug Directory
                 DebugDirectory? debugDirectory;
+                CodeViewHeader? codeViewHeader;
                 if (optionalHeaderDataDirectories.Value.Debug != 0)
                 {
                     inputFile.Position = DebugDirectory.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
@@ -155,6 +156,12 @@ namespace DissectPECOFFBinary
                     debugDirectory = inputFile.ReadStructure<DebugDirectory>();
                     Console.WriteLine(
                         debugDirectory.ToString());
+
+                    inputFile.Position = CodeViewHeader.StartingPosition(debugDirectory.Value, sectionTables.Values.ToList());
+                    WriteStartingAddress(inputFile);
+                    codeViewHeader = inputFile.ReadStructure<CodeViewHeader>();
+                    Console.WriteLine(
+                        codeViewHeader.ToString());
                 }
             }
         }
