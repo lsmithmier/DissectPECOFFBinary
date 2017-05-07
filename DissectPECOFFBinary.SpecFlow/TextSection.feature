@@ -166,3 +166,44 @@ Examples:
 	| HelloWorld_Xamarin_4.5.exe       |             |                                      | 0x0 |                                                                                        |
 	| HelloWorld_Xamarin_4.6.1.exe     |             |                                      | 0x0 |                                                                                        |
 	| HelloWorld_Xamarin_4.6.exe       |             |                                      | 0x0 |                                                                                        |
+
+Scenario Outline: Read the General Metadata Header from a file check values
+	Given a PECOFF binary file named <File Name>
+	When I read in the MSDOS20Section
+	And I read in the COFFHeader
+	And I read in the COFFOptionalHeaderStandardFields
+	And I read in the OptionalHeaderDataDirectories
+	And I read the SectionTables
+	And I read the CLR Header
+	And I read the General Metadata Header
+	Then the lSignature should be <lSignature>
+	And the iMajorVer should be <iMajorVer>
+	And the iMinorVer should be <iMinorVer>
+	And the iExtraData should be <iExtraData>
+	And the iVersionString should be <iVersionString>
+	And the pVersion should be <pVersion>
+
+Examples: 
+	| File Name                        | lSignature | iMajorVer | iMinorVer | iExtraData | iVersionString | pVersion   |
+	| HelloWorld_CSC_2.0.exe           | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_CSC_3.5.exe           | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_CSC_4.0.exe           | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_2.0.exe            | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_VS_3.0.exe            | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_VS_3.5.exe            | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_VS_4.5.1.exe          | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.5.2.exe          | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.5.exe            | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.6.1.exe          | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.6.2.exe          | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.6.exe            | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_4.exe              | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_VS_Core_1.0.dll       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_2.0.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v2.0.50727 |
+	| HelloWorld_Xamarin_4.0.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.0Client.exe | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.5.1.exe     | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.5.2.exe     | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.5.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.6.1.exe     | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+	| HelloWorld_Xamarin_4.6.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |

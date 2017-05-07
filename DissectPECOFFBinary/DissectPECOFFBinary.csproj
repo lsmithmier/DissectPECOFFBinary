@@ -72,6 +72,7 @@
     <Compile Include="COFFOptionalHeaderStandardFields.cs" />
     <Compile Include="DebugDirectory.cs" />
     <Compile Include="ExceptionHandlingTable.cs" />
+    <Compile Include="GeneralMetadataHeader.cs" />
     <Compile Include="ImportAddressTable.cs" />
     <Compile Include="IPECOFFPart.cs" />
     <Compile Include="MSDOS20Section.cs" />

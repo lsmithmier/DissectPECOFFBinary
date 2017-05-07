@@ -8,11 +8,11 @@ namespace DissectPECOFFBinary
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
     public struct CodeViewHeader : IPECOFFPart
     {
-        public static long StartingPosition(DebugDirectory debugDirectory, List<SectionTable> sectionTables)
+        public static long StartingPosition(DebugDirectory debugDirectory, 
+                                            List<SectionTable> sectionTables)
         {
             return debugDirectory.PointerToRawData;
         }
-
 
         [FieldOffset(0x0)]
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x5)]

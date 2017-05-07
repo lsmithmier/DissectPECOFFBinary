@@ -38,6 +38,16 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 Metadata;
 
+        public UInt32 MetadataAddress
+        {
+            get { return (UInt32)(Metadata & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 MetadataSize
+        {
+            get { return (UInt32)(Metadata >> 32); }
+        }
+
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U4)]
         public UInt32 Flags;

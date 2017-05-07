@@ -110,6 +110,25 @@ namespace DissectPECOFFBinary.SpecFlow
             }
         }
 
+        [When(@"I read the General Metadata Header")]
+        public void WhenIReadTheGeneralMetadataHeader()
+        {
+            var fileName = ScenarioContext.Current.Get<string>("FileName");
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile = File.OpenRead(filePath))
+            {
+                var sectionTables = ScenarioContext.Current.Get<List<SectionTable>>("SectionTables");
+                var clrHeader = ScenarioContext.Current.Get<CLRHeader>("CLRHeader");
+                GeneralMetadataHeader generalMetadataHeader = new GeneralMetadataHeader(clrHeader, sectionTables, inputFile);
+                ScenarioContext.Current.Add("GeneralMetadataHeader", generalMetadataHeader);
+            }
+        }
+
         [Then(@"the number of entries should be (.*)")]
         public void ThenTheNumberOfEntriesShouldBe(string iatSize)
         {
@@ -323,5 +342,50 @@ namespace DissectPECOFFBinary.SpecFlow
             Assert.AreEqual(pdbFileName, codeViewHeader.PdbFileName, string.Format("Assert.AreEqual failed on CodeViewHeader PdbFileName.  Expected: <{0}>.  Actual: <{1}>", pdbFileName, codeViewHeader.PdbFileName));
         }
 
+        [Then(@"the lSignature should be (.*)")]
+        public void ThenTheLSignatureShouldBe(string lSignature)
+        {
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(lSignature, generalMetadataHeader.lSignature, string.Format("Assert.AreEqual failed on GeneralMetadataHeader lSignature.  Expected: <{0}>.  Actual: <{1}>", lSignature, generalMetadataHeader.lSignature));
+        }
+
+        [Then(@"the iMajorVer should be (.*)")]
+        public void ThenTheIMajorVerShouldBe(string iMajorVer)
+        {
+            UInt16 managedNativeHeaderValue = Convert.ToUInt16(iMajorVer, 16);
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(managedNativeHeaderValue, generalMetadataHeader.iMajorVer, string.Format("Assert.AreEqual failed on GeneralMetadataHeader iMajorVer.  Expected: <{0}>.  Actual: <{1}>", managedNativeHeaderValue, generalMetadataHeader.iMajorVer));
+        }
+
+        [Then(@"the iMinorVer should be (.*)")]
+        public void ThenTheIMinorVerShouldBe(string iMinorVer)
+        {
+            UInt16 managedNativeHeaderValue = Convert.ToUInt16(iMinorVer, 16);
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(managedNativeHeaderValue, generalMetadataHeader.iMinorVer, string.Format("Assert.AreEqual failed on GeneralMetadataHeader iMinorVer.  Expected: <{0}>.  Actual: <{1}>", managedNativeHeaderValue, generalMetadataHeader.iMinorVer));
+        }
+
+        [Then(@"the iExtraData should be (.*)")]
+        public void ThenTheIExtraDataShouldBe(string iExtraData)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(iExtraData, 16);
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(managedNativeHeaderValue, generalMetadataHeader.iExtraData, string.Format("Assert.AreEqual failed on GeneralMetadataHeader iExtraData.  Expected: <{0}>.  Actual: <{1}>", managedNativeHeaderValue, generalMetadataHeader.iExtraData));
+        }
+
+        [Then(@"the iVersionString should be (.*)")]
+        public void ThenTheIVersionStringShouldBe(string iVersionString)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(iVersionString, 16);
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(managedNativeHeaderValue, generalMetadataHeader.iVersionString, string.Format("Assert.AreEqual failed on GeneralMetadataHeader iVersionString.  Expected: <{0}>.  Actual: <{1}>", managedNativeHeaderValue, generalMetadataHeader.iVersionString));
+        }
+
+        [Then(@"the pVersion should be (.*)")]
+        public void ThenThePVersionShouldBe(string pVersion)
+        {
+            var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+            Assert.AreEqual(pVersion, generalMetadataHeader.pVersion, string.Format("Assert.AreEqual failed on GeneralMetadataHeader pVersion.  Expected: <{0}>.  Actual: <{1}>", pVersion, generalMetadataHeader.pVersion));
+        }
     }
 }

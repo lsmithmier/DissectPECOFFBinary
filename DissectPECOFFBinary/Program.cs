@@ -163,14 +163,24 @@ namespace DissectPECOFFBinary
                     Console.WriteLine(
                         codeViewHeader.ToString());
                 }
+
+                GeneralMetadataHeader generalMetadataHeader = new GeneralMetadataHeader(clrHeader.Value, sectionTables.Values.ToList(), inputFile);
+                WriteStartingAddress(generalMetadataHeader.startingAddress);
+                Console.WriteLine(
+                    generalMetadataHeader.ToString());
             }
         }
 
         private static void WriteStartingAddress(FileStream inputFile)
         {
+            WriteStartingAddress(inputFile.Position);
+        }
+
+        private static void WriteStartingAddress(long startingAddress)
+        {
             var defaultForegroundColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Starting Address: 0x{0:X}", inputFile.Position);
+            Console.WriteLine("Starting Address: 0x{0:X}", startingAddress);
             Console.ForegroundColor = defaultForegroundColor;
         }
 

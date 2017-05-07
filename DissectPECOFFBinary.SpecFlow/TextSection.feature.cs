@@ -1755,6 +1755,433 @@ this.ScenarioSetup(scenarioInfo);
             this.ReadTheCodeViewHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "", "", "0x0", "", ((string[])(null)));
 #line hidden
         }
+        
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues(string fileName, string lSignature, string iMajorVer, string iMinorVer, string iExtraData, string iVersionString, string pVersion, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Read the General Metadata Header from a file check values", exampleTags);
+#line 170
+this.ScenarioSetup(scenarioInfo);
+#line 171
+ testRunner.Given(string.Format("a PECOFF binary file named {0}", fileName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 172
+ testRunner.When("I read in the MSDOS20Section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 173
+ testRunner.And("I read in the COFFHeader", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 174
+ testRunner.And("I read in the COFFOptionalHeaderStandardFields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 175
+ testRunner.And("I read in the OptionalHeaderDataDirectories", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 176
+ testRunner.And("I read the SectionTables", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 177
+ testRunner.And("I read the CLR Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 178
+ testRunner.And("I read the General Metadata Header", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 179
+ testRunner.Then(string.Format("the lSignature should be {0}", lSignature), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 180
+ testRunner.And(string.Format("the iMajorVer should be {0}", iMajorVer), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 181
+ testRunner.And(string.Format("the iMinorVer should be {0}", iMinorVer), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 182
+ testRunner.And(string.Format("the iExtraData should be {0}", iExtraData), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 183
+ testRunner.And(string.Format("the iVersionString should be {0}", iVersionString), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 184
+ testRunner.And(string.Format("the pVersion should be {0}", pVersion), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_CSC_2.0.exe" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_CSC_2_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_CSC_2.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_CSC_3.5.exe" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_CSC_3_5_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_CSC_3.5.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_CSC_4.0.exe" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_CSC_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_CSC_4_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_CSC_4.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_2_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_2.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_3_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_3.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_3.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_3_5_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_3.5.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.5.1.ex" +
+            "e")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_5_1_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.5.1.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.5.2.ex" +
+            "e")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_5_2_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.5.2.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_5_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.5.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.6.1.ex" +
+            "e")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_6_1_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.6.1.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.6.2.ex" +
+            "e")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_6_2_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.6.2.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_6_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.6.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_4.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_4_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_4.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_VS_Core_1.0" +
+            ".dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_VS_Core_1.0.dll")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_VS_Core_1_0_Dll()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_VS_Core_1.0.dll", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_2.0" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_2.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v2.0.50727")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_2_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_2.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v2.0.50727", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.0" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.0" +
+            "Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.0Client.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_0Client_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.0Client.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.5" +
+            ".1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_1_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.1.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.5" +
+            ".2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.2.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_2_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.2.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.5" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.5.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_5_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.5.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.6" +
+            ".1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.1.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_1_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.1.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Read the General Metadata Header from a file check values: HelloWorld_Xamarin_4.6" +
+            ".exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TextSection")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:File Name", "HelloWorld_Xamarin_4.6.exe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:lSignature", "BSJB")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMajorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iMinorVer", "0x1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iExtraData", "0X0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:iVersionString", "0xC")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pVersion", "v4.0.30319")]
+        public virtual void ReadTheGeneralMetadataHeaderFromAFileCheckValues_HelloWorld_Xamarin_4_6_Exe()
+        {
+            this.ReadTheGeneralMetadataHeaderFromAFileCheckValues("HelloWorld_Xamarin_4.6.exe", "BSJB", "0x1", "0x1", "0X0", "0xC", "v4.0.30319", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore
