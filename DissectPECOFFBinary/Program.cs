@@ -95,79 +95,104 @@ namespace DissectPECOFFBinary
                     }
                 }
                 foreach (var sectionTable in sectionTables.
-                    OrderBy(x=>x.Value.PointerToRawData))
+                    OrderBy(x => x.Value.PointerToRawData))
                 {
                     byte[] buffer = new byte[sectionTable.Value.VirtualSize];
                     inputFile.Position = sectionTable.Value.PointerToRawData;
                     WriteStartingAddress(inputFile);
                     inputFile.Read(buffer, 0,
                         (int)sectionTable.Value.VirtualSize);
-                    Console.WriteLine("Raw dump of section {0}",sectionTable.Key);
+                    Console.WriteLine("Raw dump of section {0}", sectionTable.Key);
                     Console.WriteLine(HexDump(buffer));
                 }
-                var importAddresses = ImportAddressTable.ReadImportAddresses(inputFile, optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
-                Console.WriteLine("Import Address Table");
-                Console.WriteLine("====================");
-                foreach (var importAddress in importAddresses)
-                {
-                    Console.WriteLine("   Import Address {0:X}", importAddress);
-                }
 
-                //CLR Header
-                inputFile.Position = CLRHeader.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                DissectTextSection(sectionTables, inputFile, optionalHeaderDataDirectories);
+            }
+        }
+
+        private static void DissectTextSection(Dictionary<string, SectionTable> sectionTables, FileStream inputFile, OptionalHeaderDataDirectories? optionalHeaderDataDirectories)
+        {
+            //Import Address Table
+            var importAddresses = ImportAddressTable.ReadImportAddresses(inputFile, optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+            Console.WriteLine("Import Address Table");
+            Console.WriteLine("====================");
+            foreach (var importAddress in importAddresses)
+            {
+                Console.WriteLine("   Import Address {0:X}", importAddress);
+            }
+
+            //CLR Header
+            inputFile.Position = CLRHeader.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+            WriteStartingAddress(inputFile);
+            CLRHeader?
+                clrHeader = inputFile.
+                    ReadStructure<CLRHeader>();
+            Console.WriteLine(
+                clrHeader.ToString());
+
+            //Strong Name Signature
+            StrongNameSignature? strongNameSignature;
+            if (clrHeader.Value.StrongNameSignature != 0)
+            {
+                inputFile.Position = StrongNameSignature.StartingPosition(clrHeader.Value, sectionTables.Values.ToList());
                 WriteStartingAddress(inputFile);
-                CLRHeader?
-                    clrHeader = inputFile.
-                        ReadStructure<CLRHeader>();
+                strongNameSignature = inputFile.
+                        ReadStructure<StrongNameSignature>();
                 Console.WriteLine(
-                    clrHeader.ToString());
+                    strongNameSignature.ToString());
+            }
 
-                //Strong Name Signature
-                StrongNameSignature? strongNameSignature;
-                if (clrHeader.Value.StrongNameSignature != 0)
-                {
-                    inputFile.Position = StrongNameSignature.StartingPosition(clrHeader.Value, sectionTables.Values.ToList());
-                    WriteStartingAddress(inputFile);
-                    strongNameSignature = inputFile.
-                            ReadStructure<StrongNameSignature>();
-                    Console.WriteLine(
-                        strongNameSignature.ToString());
-                }
-
-                //IL Code and Managed Structure Exception Handling Tables 
-                ExceptionHandlingTable? exceptionHandlingTable;
-                if (optionalHeaderDataDirectories.Value.ExceptionTable != 0)
-                {
-                    inputFile.Position = ExceptionHandlingTable.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
-                    WriteStartingAddress(inputFile);
-                    exceptionHandlingTable = inputFile.
-                            ReadStructure<ExceptionHandlingTable>();
-                    Console.WriteLine(
-                        exceptionHandlingTable.ToString());
-                }
-
-                //Debug Directory
-                DebugDirectory? debugDirectory;
-                CodeViewHeader? codeViewHeader;
-                if (optionalHeaderDataDirectories.Value.Debug != 0)
-                {
-                    inputFile.Position = DebugDirectory.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
-                    WriteStartingAddress(inputFile);
-                    debugDirectory = inputFile.ReadStructure<DebugDirectory>();
-                    Console.WriteLine(
-                        debugDirectory.ToString());
-
-                    inputFile.Position = CodeViewHeader.StartingPosition(debugDirectory.Value, sectionTables.Values.ToList());
-                    WriteStartingAddress(inputFile);
-                    codeViewHeader = inputFile.ReadStructure<CodeViewHeader>();
-                    Console.WriteLine(
-                        codeViewHeader.ToString());
-                }
-
-                GeneralMetadataHeader generalMetadataHeader = new GeneralMetadataHeader(clrHeader.Value, sectionTables.Values.ToList(), inputFile);
-                WriteStartingAddress(generalMetadataHeader.startingAddress);
+            //IL Code and Managed Structure Exception Handling Tables 
+            ExceptionHandlingTable? exceptionHandlingTable;
+            if (optionalHeaderDataDirectories.Value.ExceptionTable != 0)
+            {
+                inputFile.Position = ExceptionHandlingTable.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                WriteStartingAddress(inputFile);
+                exceptionHandlingTable = inputFile.
+                        ReadStructure<ExceptionHandlingTable>();
                 Console.WriteLine(
-                    generalMetadataHeader.ToString());
+                    exceptionHandlingTable.ToString());
+            }
+
+            //Debug Directory
+            DebugDirectory? debugDirectory;
+            CodeViewHeader? codeViewHeader;
+            if (optionalHeaderDataDirectories.Value.Debug != 0)
+            {
+                inputFile.Position = DebugDirectory.StartingPosition(optionalHeaderDataDirectories.Value, sectionTables.Values.ToList());
+                WriteStartingAddress(inputFile);
+                debugDirectory = inputFile.ReadStructure<DebugDirectory>();
+                Console.WriteLine(
+                    debugDirectory.ToString());
+
+                inputFile.Position = CodeViewHeader.StartingPosition(debugDirectory.Value, sectionTables.Values.ToList());
+                WriteStartingAddress(inputFile);
+                codeViewHeader = inputFile.ReadStructure<CodeViewHeader>();
+                Console.WriteLine(
+                    codeViewHeader.ToString());
+            }
+
+            GeneralMetadataHeader generalMetadataHeader = 
+                new GeneralMetadataHeader(clrHeader.Value, sectionTables.Values.ToList(), inputFile);
+            WriteStartingAddress(generalMetadataHeader.startingAddress);
+            Console.WriteLine(
+                generalMetadataHeader.ToString());
+
+            inputFile.Position = MetadataStorageHeader.StartingPosition(generalMetadataHeader);
+            WriteStartingAddress(inputFile);
+            MetadataStorageHeader? metadataStorageHeader =
+                inputFile.ReadStructure<MetadataStorageHeader>();
+            Console.WriteLine(metadataStorageHeader.ToString());
+
+            Dictionary<string,MetadataStreamHeader> streams = new Dictionary<string, MetadataStreamHeader>();
+            for (int i = 0; i < metadataStorageHeader.Value.iStreams; i++)
+            {
+                WriteStartingAddress(inputFile);
+                MetadataStreamHeader
+                    streamHeader = new MetadataStreamHeader(inputFile);
+                Console.WriteLine(
+                    streamHeader.ToString());
+                streams.Add(streamHeader.rcName, streamHeader);
             }
         }
 

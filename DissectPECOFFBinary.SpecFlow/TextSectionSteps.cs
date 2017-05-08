@@ -129,6 +129,56 @@ namespace DissectPECOFFBinary.SpecFlow
             }
         }
 
+        [When(@"I read the Metadata Storage Header")]
+        public void WhenIReadTheMetadataStorageHeader()
+        {
+            var fileName = ScenarioContext.Current.Get<string>("FileName");
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile = File.OpenRead(filePath))
+            {
+                var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+                inputFile.Position = MetadataStorageHeader.StartingPosition(generalMetadataHeader);
+                MetadataStorageHeader? metadataStorageHeader =
+                    inputFile.ReadStructure<MetadataStorageHeader>();
+                ScenarioContext.Current.Add("MetadataStorageHeader", metadataStorageHeader);
+            }
+        }
+
+        [When(@"I read the Metadata Stream Headers")]
+        public void WhenIReadTheMetadataStreamHeaders()
+        {
+            var fileName = ScenarioContext.Current.Get<string>("FileName");
+            var filePath = string.Format(@".\TestArtifacts\{0}", fileName);
+            if (!File.Exists(filePath))
+            {
+                filePath = string.Format(@".\{0}", fileName);
+                Console.WriteLine(string.Format(@"File not Found: .\TestArtifacts\{0}", fileName));
+            }
+            using (FileStream inputFile = File.OpenRead(filePath))
+            {
+                var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
+                var metadataStorageHeader = ScenarioContext.Current.Get<MetadataStorageHeader>("MetadataStorageHeader");
+                Dictionary<string, MetadataStreamHeader> streams = new Dictionary<string, MetadataStreamHeader>();
+                if (metadataStorageHeader.iStreams > 0)
+                {
+                    var metadataStreamHeader = new MetadataStreamHeader(generalMetadataHeader, inputFile);
+                    streams.Add(metadataStreamHeader.rcName, metadataStreamHeader);
+                    for (int i = 1; i < metadataStorageHeader.iStreams; i++)
+                    {
+                        MetadataStreamHeader
+                            streamHeader = new MetadataStreamHeader(inputFile);
+                        streams.Add(streamHeader.rcName, streamHeader);
+                    }
+                }
+                ScenarioContext.Current.Add("MetadataStreamHeaders", streams);
+            }
+        }
+
         [Then(@"the number of entries should be (.*)")]
         public void ThenTheNumberOfEntriesShouldBe(string iatSize)
         {
@@ -386,6 +436,54 @@ namespace DissectPECOFFBinary.SpecFlow
         {
             var generalMetadataHeader = ScenarioContext.Current.Get<GeneralMetadataHeader>("GeneralMetadataHeader");
             Assert.AreEqual(pVersion, generalMetadataHeader.pVersion, string.Format("Assert.AreEqual failed on GeneralMetadataHeader pVersion.  Expected: <{0}>.  Actual: <{1}>", pVersion, generalMetadataHeader.pVersion));
+        }
+
+        [Then(@"the fFlags should be (.*)")]
+        public void ThenTheFFlagsShouldBe(string fFlags)
+        {
+            byte managedNativeHeaderValue = Convert.ToByte(fFlags, 16);
+            var metadataStorageHeader = ScenarioContext.Current.Get<MetadataStorageHeader>("MetadataStorageHeader");
+            Assert.AreEqual(managedNativeHeaderValue, metadataStorageHeader.fFlags, string.Format("Assert.AreEqual failed on MetadataStorageHeader fFlags.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, metadataStorageHeader.fFlags));
+        }
+
+        [Then(@"the padding should be (.*)")]
+        public void ThenThePaddingShouldBe(string padding)
+        {
+            byte managedNativeHeaderValue = Convert.ToByte(padding, 16);
+            var metadataStorageHeader = ScenarioContext.Current.Get<MetadataStorageHeader>("MetadataStorageHeader");
+            Assert.AreEqual(managedNativeHeaderValue, metadataStorageHeader.padding, string.Format("Assert.AreEqual failed on MetadataStorageHeader padding.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, metadataStorageHeader.padding));
+        }
+
+        [Then(@"the iStreams should be (.*)")]
+        public void ThenTheIStreamsShouldBe(string iStreams)
+        {
+            byte managedNativeHeaderValue = Convert.ToByte(iStreams, 16);
+            var metadataStorageHeader = ScenarioContext.Current.Get<MetadataStorageHeader>("MetadataStorageHeader");
+            Assert.AreEqual(managedNativeHeaderValue, metadataStorageHeader.iStreams, string.Format("Assert.AreEqual failed on MetadataStorageHeader iStreams.  Expected: <{0}>.  Actual: <{1}>", managedNativeHeaderValue, metadataStorageHeader.iStreams));
+        }
+
+        [Then(@"if the rcName is (.*)")]
+        public void ThenIfTheRcNameIs(string rcName)
+        {
+            var streams = ScenarioContext.Current.Get<Dictionary<string,MetadataStreamHeader>>("MetadataStreamHeaders");
+            Assert.IsTrue(streams.ContainsKey(rcName));
+            ScenarioContext.Current.Add("CurrentMetadataStreamHeader", streams[rcName]);
+        }
+
+        [Then(@"the iOffset should be (.*)")]
+        public void ThenTheIOffsetShouldBe(string iOffset)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(iOffset, 16);
+            var metadataStreamHeader = ScenarioContext.Current.Get<MetadataStreamHeader>("CurrentMetadataStreamHeader");
+            Assert.AreEqual(managedNativeHeaderValue, metadataStreamHeader.iOffset, string.Format("Assert.AreEqual failed on MetadataStreamHeader iOffset.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, metadataStreamHeader.iOffset));
+        }
+
+        [Then(@"the iSize should be (.*)")]
+        public void ThenTheISizeShouldBe(string iSize)
+        {
+            UInt32 managedNativeHeaderValue = Convert.ToUInt32(iSize, 16);
+            var metadataStreamHeader = ScenarioContext.Current.Get<MetadataStreamHeader>("CurrentMetadataStreamHeader");
+            Assert.AreEqual(managedNativeHeaderValue, metadataStreamHeader.iSize, string.Format("Assert.AreEqual failed on MetadataStreamHeader iSize.  Expected: <0x{0:X}>.  Actual: <0x{1:X}>", managedNativeHeaderValue, metadataStreamHeader.iSize));
         }
     }
 }

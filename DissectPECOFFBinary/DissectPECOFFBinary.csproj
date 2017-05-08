@@ -75,6 +75,8 @@
     <Compile Include="GeneralMetadataHeader.cs" />
     <Compile Include="ImportAddressTable.cs" />
     <Compile Include="IPECOFFPart.cs" />
+    <Compile Include="MetadataStorageHeader.cs" />
+    <Compile Include="MetadataStreamHeader.cs" />
     <Compile Include="MSDOS20Section.cs" />
     <Compile Include="OptionalHeaderDataDirectories.cs" />
     <Compile Include="OptionalHeaderWindowsSpecificPE32.cs" />

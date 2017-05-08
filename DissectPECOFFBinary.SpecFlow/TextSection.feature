@@ -207,3 +207,170 @@ Examples:
 	| HelloWorld_Xamarin_4.5.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
 	| HelloWorld_Xamarin_4.6.1.exe     | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
 	| HelloWorld_Xamarin_4.6.exe       | BSJB       | 0x1       | 0x1       | 0X0        | 0xC            | v4.0.30319 |
+
+Scenario Outline: Read the Metadata Storage Header from a file check values
+	Given a PECOFF binary file named <File Name>
+	When I read in the MSDOS20Section
+	And I read in the COFFHeader
+	And I read in the COFFOptionalHeaderStandardFields
+	And I read in the OptionalHeaderDataDirectories
+	And I read the SectionTables
+	And I read the CLR Header
+	And I read the General Metadata Header
+	And I read the Metadata Storage Header
+	Then the fFlags should be <fFlags>
+	And the padding should be <padding>
+	And the iStreams should be <iStreams>
+
+Examples: 
+	| File Name                        | fFlags | padding | iStreams |
+	| HelloWorld_CSC_2.0.exe           | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_CSC_3.5.exe           | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_CSC_4.0.exe           | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_2.0.exe            | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_3.0.exe            | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_3.5.exe            | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.5.1.exe          | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.5.2.exe          | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.5.exe            | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.6.1.exe          | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.6.2.exe          | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.6.exe            | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_4.exe              | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_VS_Core_1.0.dll       | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_2.0.exe       | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.0.exe       | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.0Client.exe | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.5.1.exe     | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.5.2.exe     | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.5.exe       | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.6.1.exe     | 0x0    | 0x0     | 0x5      |
+	| HelloWorld_Xamarin_4.6.exe       | 0x0    | 0x0     | 0x5      |
+
+Scenario Outline: Read the Metadata Stream Headers from a file check values
+	Given a PECOFF binary file named <File Name>
+	When I read in the MSDOS20Section
+	And I read in the COFFHeader
+	And I read in the COFFOptionalHeaderStandardFields
+	And I read in the OptionalHeaderDataDirectories
+	And I read the SectionTables
+	And I read the CLR Header
+	And I read the General Metadata Header
+	And I read the Metadata Storage Header
+	And I read the Metadata Stream Headers
+	Then if the rcName is <rcName>
+	Then the iOffset should be <iOffset>
+	And the iSize should be <iSize>
+
+Examples: 
+	| File Name                        | rcName   | iOffset | iSize |
+	| HelloWorld_CSC_2.0.exe           | #~       | 0x6C    | 0x104 |
+	| HelloWorld_CSC_3.5.exe           | #~       | 0x6C    | 0x104 |
+	| HelloWorld_CSC_4.0.exe           | #~       | 0x6C    | 0x104 |
+	| HelloWorld_VS_2.0.exe            | #~       | 0x6C    | 0x1D0 |
+	| HelloWorld_VS_3.0.exe            | #~       | 0x6C    | 0x1D0 |
+	| HelloWorld_VS_3.5.exe            | #~       | 0x6C    | 0x1D0 |
+	| HelloWorld_VS_4.5.1.exe          | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.5.2.exe          | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.5.exe            | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.6.1.exe          | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.6.2.exe          | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.6.exe            | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_4.exe              | #~       | 0x6C    | 0x1E4 |
+	| HelloWorld_VS_Core_1.0.dll       | #~       | 0x6C    | 0x1E0 |
+	| HelloWorld_Xamarin_2.0.exe       | #~       | 0x6C    | 0x170 |
+	| HelloWorld_Xamarin_4.0.exe       | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.0Client.exe | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.5.1.exe     | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.5.2.exe     | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.5.exe       | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.6.1.exe     | #~       | 0x6C    | 0x184 |
+	| HelloWorld_Xamarin_4.6.exe       | #~       | 0x6C    | 0x184 |
+	| HelloWorld_CSC_2.0.exe           | #Strings | 0x170   | 0x100 |
+	| HelloWorld_CSC_3.5.exe           | #Strings | 0x170   | 0x100 |
+	| HelloWorld_CSC_4.0.exe           | #Strings | 0x170   | 0x100 |
+	| HelloWorld_VS_2.0.exe            | #Strings | 0x23C   | 0x258 |
+	| HelloWorld_VS_3.0.exe            | #Strings | 0x23C   | 0x258 |
+	| HelloWorld_VS_3.5.exe            | #Strings | 0x23C   | 0x258 |
+	| HelloWorld_VS_4.5.1.exe          | #Strings | 0x250   | 0x28C |
+	| HelloWorld_VS_4.5.2.exe          | #Strings | 0x250   | 0x28C |
+	| HelloWorld_VS_4.5.exe            | #Strings | 0x250   | 0x288 |
+	| HelloWorld_VS_4.6.1.exe          | #Strings | 0x250   | 0x28C |
+	| HelloWorld_VS_4.6.2.exe          | #Strings | 0x250   | 0x28C |
+	| HelloWorld_VS_4.6.exe            | #Strings | 0x250   | 0x288 |
+	| HelloWorld_VS_4.exe              | #Strings | 0x250   | 0x284 |
+	| HelloWorld_VS_Core_1.0.dll       | #Strings | 0x24C   | 0x264 |
+	| HelloWorld_Xamarin_2.0.exe       | #Strings | 0x1DC   | 0x1C0 |
+	| HelloWorld_Xamarin_4.0.exe       | #Strings | 0x1F0   | 0x1F4 |
+	| HelloWorld_Xamarin_4.0Client.exe | #Strings | 0x1F0   | 0x208 |
+	| HelloWorld_Xamarin_4.5.1.exe     | #Strings | 0x1F0   | 0x1F8 |
+	| HelloWorld_Xamarin_4.5.2.exe     | #Strings | 0x1F0   | 0x1F8 |
+	| HelloWorld_Xamarin_4.5.exe       | #Strings | 0x1F0   | 0x1F4 |
+	| HelloWorld_Xamarin_4.6.1.exe     | #Strings | 0x1F0   | 0x1F8 |
+	| HelloWorld_Xamarin_4.6.exe       | #Strings | 0x1F0   | 0x1F4 |
+	| HelloWorld_CSC_2.0.exe           | #US      | 0x270   | 0x1C  |
+	| HelloWorld_CSC_3.5.exe           | #US      | 0x270   | 0x1C  |
+	| HelloWorld_CSC_4.0.exe           | #US      | 0x270   | 0x1C  |
+	| HelloWorld_VS_2.0.exe            | #US      | 0x494   | 0x1C  |
+	| HelloWorld_VS_3.0.exe            | #US      | 0x494   | 0x1C  |
+	| HelloWorld_VS_3.5.exe            | #US      | 0x494   | 0x1C  |
+	| HelloWorld_VS_4.5.1.exe          | #US      | 0x4DC   | 0x1C  |
+	| HelloWorld_VS_4.5.2.exe          | #US      | 0x4DC   | 0x1C  |
+	| HelloWorld_VS_4.5.exe            | #US      | 0x4D8   | 0x1C  |
+	| HelloWorld_VS_4.6.1.exe          | #US      | 0x4DC   | 0x1C  |
+	| HelloWorld_VS_4.6.2.exe          | #US      | 0x4DC   | 0x1C  |
+	| HelloWorld_VS_4.6.exe            | #US      | 0x4D8   | 0x1C  |
+	| HelloWorld_VS_4.exe              | #US      | 0x4D4   | 0x1C  |
+	| HelloWorld_VS_Core_1.0.dll       | #US      | 0x4B0   | 0x1C  |
+	| HelloWorld_Xamarin_2.0.exe       | #US      | 0x39C   | 0x1C  |
+	| HelloWorld_Xamarin_4.0.exe       | #US      | 0x3E4   | 0x1C  |
+	| HelloWorld_Xamarin_4.0Client.exe | #US      | 0x3F8   | 0x1C  |
+	| HelloWorld_Xamarin_4.5.1.exe     | #US      | 0x3E8   | 0x1C  |
+	| HelloWorld_Xamarin_4.5.2.exe     | #US      | 0x3E8   | 0x1C  |
+	| HelloWorld_Xamarin_4.5.exe       | #US      | 0x3E4   | 0x1C  |
+	| HelloWorld_Xamarin_4.6.1.exe     | #US      | 0x3E8   | 0x1C  |
+	| HelloWorld_Xamarin_4.6.exe       | #US      | 0x3E4   | 0x1C  |
+	| HelloWorld_CSC_2.0.exe           | #GUID    | 0x28C   | 0x10  |
+	| HelloWorld_CSC_3.5.exe           | #GUID    | 0x28C   | 0x10  |
+	| HelloWorld_CSC_4.0.exe           | #GUID    | 0x28C   | 0x10  |
+	| HelloWorld_VS_2.0.exe            | #GUID    | 0x4B0   | 0x10  |
+	| HelloWorld_VS_3.0.exe            | #GUID    | 0x4B0   | 0x10  |
+	| HelloWorld_VS_3.5.exe            | #GUID    | 0x4B0   | 0x10  |
+	| HelloWorld_VS_4.5.1.exe          | #GUID    | 0x4F8   | 0x10  |
+	| HelloWorld_VS_4.5.2.exe          | #GUID    | 0x4F8   | 0x10  |
+	| HelloWorld_VS_4.5.exe            | #GUID    | 0x4F4   | 0x10  |
+	| HelloWorld_VS_4.6.1.exe          | #GUID    | 0x4F8   | 0x10  |
+	| HelloWorld_VS_4.6.2.exe          | #GUID    | 0x4F8   | 0x10  |
+	| HelloWorld_VS_4.6.exe            | #GUID    | 0x4F4   | 0x10  |
+	| HelloWorld_VS_4.exe              | #GUID    | 0x4F0   | 0x10  |
+	| HelloWorld_VS_Core_1.0.dll       | #GUID    | 0x4CC   | 0x10  |
+	| HelloWorld_Xamarin_2.0.exe       | #GUID    | 0x3B8   | 0x10  |
+	| HelloWorld_Xamarin_4.0.exe       | #GUID    | 0x400   | 0x10  |
+	| HelloWorld_Xamarin_4.0Client.exe | #GUID    | 0x414   | 0x10  |
+	| HelloWorld_Xamarin_4.5.1.exe     | #GUID    | 0x404   | 0x10  |
+	| HelloWorld_Xamarin_4.5.2.exe     | #GUID    | 0x404   | 0x10  |
+	| HelloWorld_Xamarin_4.5.exe       | #GUID    | 0x400   | 0x10  |
+	| HelloWorld_Xamarin_4.6.1.exe     | #GUID    | 0x404   | 0x10  |
+	| HelloWorld_Xamarin_4.6.exe       | #GUID    | 0x400   | 0x10  |
+	| HelloWorld_CSC_2.0.exe           | #Blob    | 0x29C   | 0x50  |
+	| HelloWorld_CSC_3.5.exe           | #Blob    | 0x29C   | 0x50  |
+	| HelloWorld_CSC_4.0.exe           | #Blob    | 0x29C   | 0x50  |
+	| HelloWorld_VS_2.0.exe            | #Blob    | 0x4C0   | 0xF0  |
+	| HelloWorld_VS_3.0.exe            | #Blob    | 0x4C0   | 0xEC  |
+	| HelloWorld_VS_3.5.exe            | #Blob    | 0x4C0   | 0xEC  |
+	| HelloWorld_VS_4.5.1.exe          | #Blob    | 0x508   | 0x13C |
+	| HelloWorld_VS_4.5.2.exe          | #Blob    | 0x508   | 0x13C |
+	| HelloWorld_VS_4.5.exe            | #Blob    | 0x504   | 0x134 |
+	| HelloWorld_VS_4.6.1.exe          | #Blob    | 0x508   | 0x13C |
+	| HelloWorld_VS_4.6.2.exe          | #Blob    | 0x508   | 0x128 |
+	| HelloWorld_VS_4.6.exe            | #Blob    | 0x504   | 0x134 |
+	| HelloWorld_VS_4.exe              | #Blob    | 0x500   | 0x130 |
+	| HelloWorld_VS_Core_1.0.dll       | #Blob    | 0x4DC   | 0xF0  |
+	| HelloWorld_Xamarin_2.0.exe       | #Blob    | 0x3C8   | 0x78  |
+	| HelloWorld_Xamarin_4.0.exe       | #Blob    | 0x410   | 0xB0  |
+	| HelloWorld_Xamarin_4.0Client.exe | #Blob    | 0x424   | 0xC4  |
+	| HelloWorld_Xamarin_4.5.1.exe     | #Blob    | 0x414   | 0xB4  |
+	| HelloWorld_Xamarin_4.5.2.exe     | #Blob    | 0x414   | 0xB4  |
+	| HelloWorld_Xamarin_4.5.exe       | #Blob    | 0x410   | 0xB0  |
+	| HelloWorld_Xamarin_4.6.1.exe     | #Blob    | 0x414   | 0xB4  |
+	| HelloWorld_Xamarin_4.6.exe       | #Blob    | 0x410   | 0xB0  |
