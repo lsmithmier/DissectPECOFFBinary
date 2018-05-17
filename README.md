@@ -26,7 +26,7 @@ Please see [Dissecting C#
 Executables](http://www.csharp4u.com/2017/01/dissecting-c-executables.html) 
 for a discussion of the different parts of a C# executable
 and the [C# For 
-You](http://www.csharp4u.com/search/label/DissectPCOFFBinary) 
+You](http://www.csharp4u.com/search/label/DissectPECOFFBinary) 
 blog for the latest posts on the application.
 
 *"Sharing is Caring"*
