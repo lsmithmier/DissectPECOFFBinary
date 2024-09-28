@@ -15,9 +15,9 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x4)]
         public string Signature;
 
-        [FieldOffset(4)]
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 0x37)]
-        byte[] MSDOSEXEHeader;
+        //[FieldOffset(4)]
+        //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 0x39)]
+        //byte[] MSDOSEXEHeader;
 
         [FieldOffset(0x3C)]
         [MarshalAs(UnmanagedType.U4)]

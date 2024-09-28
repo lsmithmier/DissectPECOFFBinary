@@ -1,0 +1,447 @@
+
+body
+{
+	background-color: #9090BB;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000020;
+	text-align: center;
+}
+
+hr
+{
+	background-color: #707096;
+	color: #707096;
+	height: 1px;
+	border: 0px;
+}
+
+.smalltext, .mediumtext, .largetext
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #000020
+}
+
+.smalltext
+{
+	font-size : 11px;
+}
+
+
+.mediumtext
+{
+	font-size : 12px;
+}
+
+
+.largetext, td.row1, td.row2
+{
+	font-size : 13px;
+}
+
+.postbody
+{
+        word-wrap: break-word;
+}
+
+.postbody img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.postbody iframe
+{
+	max-width: 100%;
+}
+
+.quotecontainer
+{
+	width: 95%;
+	margin:12px auto;
+}
+
+.quoteheader
+{
+	font-size: 10px;
+	padding: 4px 2px;
+}
+
+.quotecontainer blockquote
+{
+	margin: 0px;
+	padding: 4px;
+	border: 1px solid;
+	border-color: #707096;
+	background-color: #FFFFFF;
+}
+
+.quotecontainer code, .quotecontainer pre
+{
+	display: block;
+	white-space: pre;
+	word-wrap: normal;
+	overflow: auto;
+	font-family: Courier New, Courier, monospace;
+	font-size: 13px;
+	margin: 0px;
+	padding: 4px;
+	max-height: 400px;
+	border:1px solid;
+	border-color: #707096;
+	background-color: #FFFFFF;
+}
+
+.quotecontainer pre a.postlink
+{
+	font-family: Courier New, Courier, monospace;
+	font-size: 13px;
+	color: inherit;
+}
+
+.code_comment, .code_annotation
+{
+	color: #808080;
+}
+
+.code_string
+{
+	color: #880000;
+}
+
+.code_symbol
+{
+	color: #0000FF;
+}
+
+.code_number
+{
+	color: #008800;
+}
+
+.container
+{
+	margin-left: auto;
+	margin-right:auto;
+	max-width: 1320px;
+	padding: 12px;
+	background-color: #F8F8F8;
+	border: 1px solid black;
+	text-align: left;
+}
+
+.navigation a
+{
+	padding-left: 4px;
+	padding-right: 4px;
+	line-height: 16px;
+}
+
+/* Text on the Category Row */
+
+.catrowtext
+{
+	font-family:  Verdana, Helvetica, sans-serif;
+	font-size : 13px;
+	color: #FFF788;
+	font-weight: bold;
+}
+
+.toprowtext
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size : 10px;
+	color: #EEEEFF;
+	font-weight: bold;
+}
+
+.largetoprowtext
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #EEEEFF;
+	font-weight: bold;
+}
+
+td.row1
+{
+	background-color: #E8E8E8;
+}
+
+
+td.row2
+{
+	background-color: #F1F1F1;
+}
+
+td.catrow
+{
+	background-color: #7676A8;
+	color: #FFF788;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+td.toprow
+{
+	background-color: #9090BB;
+	color: #EEEEFF;
+	font-weight: bold;
+}
+
+td.leftcol
+{
+	width: 14%;
+}
+
+table.grid, table.lineup
+{
+	width: 100%;
+}
+
+table.lineup
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.grid, table.grid>tbody>tr, table.grid>tbody>tr>td
+{
+	border: 1px solid #707096;
+	border-collapse: collapse;
+}
+
+table.lineup, table.lineup>tbody>tr, table.lineup>tbody>tr>td
+{
+	border: 0;
+}
+
+table.grid>tbody>tr>td
+{
+	padding: 4px;
+}
+
+table.lineup>tbody>tr>td
+{
+	padding: 2px;
+}
+
+/* Links */
+
+a, a:link, a:active, a:visited
+{
+	color: #000020;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #E23E3E;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a.forumlink, a.forumlink:link, a.forumlink:visited, a.forumlink:active
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: #000020;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a.forumlink:hover
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: #E23E3E;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a.topiclink, a.topiclink:link, a.topiclink:active, a.topiclink:visited
+{
+	font-size: 13px;
+	color: #000020;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.topiclink:hover
+{
+	font-size: 13px;
+	color: #E23E3E;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.boldlink, a.boldlink:link, a.boldlink:visited, a.boldlink:active
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #000020;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.boldlink:hover
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #E23E3E;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a.catlink, a.catlink:link, a.catlink:visited, a.catlink:active
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	color: #FFF788;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.catlink:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 13px;
+	color: #FFF788;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.toprowlink, a.toprowlink:link, a.toprowlink:visited, a.toprowlink:active
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9px;
+	color: #EEEEFF;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+a.toprowlink:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 9px;
+	color: #EEEEFF;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+a.postlink, a.postlink:link, a.postlink:visited, a.postlink:active
+{
+	color: #0000C0;
+}
+
+a.postlink:hover
+{
+	color: #E23E3E;
+}
+
+form
+{
+	display: inline;
+}
+
+textarea
+{
+	overflow: auto;
+}
+
+input, textarea, select
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.bginput, .bgbutton, textarea, select
+{
+	color: #000000;
+	background-color: #E4E4E4;
+	text-indent: 2px;
+}
+
+.maintitle,h1,h2
+{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: "Trebuchet MS",Verdana, Helvetica, sans-serif;
+	text-decoration: none;
+	line-height: 120%;
+	color: #000000;
+}
+
+.indexlink
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	color: #000020;
+	font-family: Verdana, Helvetica, sans-serif
+}
+
+td.attachrow
+{
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #000020;
+	border-color: #000020;
+	background-color: #FFFFFF;
+}
+
+td.attachheader
+{
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #000020;
+	border-color: #000020;
+	background-color: #FFFFFF;
+}
+
+table.attachcontainer
+{
+	border: 1px solid;
+	border-color: #707096;
+	background-color: #FFFFFF
+}
+
+table.attachtable
+{
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #000020;
+	border-color: #000020;
+	background-color: #FFFFFF;
+	border-collapse : collapse;
+}
+
+.postheader
+{
+	font-size : 13px;
+	padding-bottom: 4px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #707096;
+}
+
+.fixwidth {
+	width: 450px;
+}
+
+.folded
+{
+	display: none;
+}
+
+@media only screen and (max-width: 800px) 
+{
+  .foldable {
+        display: none;
+  }
+  .folded {
+	display: block;
+  }
+  tr.folded {
+	display: table-row;
+  } 
+  .fixwidth {
+	width: 96%;
+  } 
+}

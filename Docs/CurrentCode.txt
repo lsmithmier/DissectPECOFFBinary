@@ -1,0 +1,15 @@
+MSDOS20Section
+PESignature
+COFFHeader
+COFFOptionalHeaderStandardFields
+OptionalHeaderWindowsSpecificPE32 or OptionalHeaderWindowsSpecificPE32Plus
+OptionalHeaderDataDirectories
+SectionTable (s)
+	ImportAddressTable
+	CLRHeader
+	StrongNameSignature
+	ExceptionHandlingTable
+	DebugDirectory
+		CodeViewHeader
+	GeneralMetadataHeader 
+	MetadataStorageHeader

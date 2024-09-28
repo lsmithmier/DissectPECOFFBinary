@@ -34,8 +34,10 @@ namespace DissectPECOFFBinary
 
 
             [FieldOffset(0x0)]
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x5)]
-            internal string lSignature;
+            [MarshalAs(UnmanagedType.U4)]
+            internal UInt32 lSig;
+
+            internal string lSignature => IPECOFFPart.ConvertUInt32ToString(lSig);
 
             [FieldOffset(0x4)]
             [MarshalAs(UnmanagedType.U2)]

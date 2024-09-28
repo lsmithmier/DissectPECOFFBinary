@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 
+/*
+
+ */
 namespace DissectPECOFFBinary
 {
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Ansi, Pack = 1)]
@@ -15,29 +18,20 @@ namespace DissectPECOFFBinary
         }
 
         [FieldOffset(0x0)]
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 0x5)]
-        public string CvSignature;
+        [MarshalAs(UnmanagedType.U4)]
+        public UInt32 CvSig;
+
+        public string CvSignature => IPECOFFPart.ConvertUInt32ToString(CvSig);
 
         [FieldOffset(0x4)]
-        [MarshalAs(UnmanagedType.I4)]
-        public Int32 a;
-
-        [FieldOffset(0x8)]
-        [MarshalAs(UnmanagedType.I2)]
-        public Int16 b;
-
-        [FieldOffset(0xA)]
-        [MarshalAs(UnmanagedType.I2)]
-        public Int16 c;
+        [MarshalAs(UnmanagedType.U8)]
+        public UInt64 Sig1;
 
         [FieldOffset(0xC)]
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)]
-        public byte[] d;
+        [MarshalAs(UnmanagedType.U8)]
+        public UInt64 Sig2;
 
-        public Guid Signature
-        {
-            get { return d==null?Guid.Empty:new Guid(a, b, c, d); }
-        }
+        public Guid Signature => IPECOFFPart.ConvertUInt64ToGUID(Sig1, Sig2);
 
         [FieldOffset(0x14)]
         [MarshalAs(UnmanagedType.U4)]

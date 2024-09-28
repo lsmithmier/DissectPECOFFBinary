@@ -32,13 +32,43 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 ExportTable;
 
+        public UInt32 ExportTableAddress
+        {
+            get { return (UInt32)(ExportTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 ExportTableSize
+        {
+            get { return (UInt32)(ExportTable >> 32); }
+        }
+
         [FieldOffset(0x8)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 ImportTable;
 
+        public UInt32 ImportTableAddress
+        {
+            get { return (UInt32)(ImportTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 ImportTableSize
+        {
+            get { return (UInt32)(ImportTable >> 32); }
+        }
+
         [FieldOffset(0x10)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 ResourceTable;
+
+        public UInt32 ResourceTableAddress
+        {
+            get { return (UInt32)(ResourceTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 ResourceTableSize
+        {
+            get { return (UInt32)(ResourceTable >> 32); }
+        }
 
         [FieldOffset(0x18)]
         [MarshalAs(UnmanagedType.U8)]
@@ -58,9 +88,29 @@ namespace DissectPECOFFBinary
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 CertificateTable;
 
+        public UInt32 CertificateTableAddress
+        {
+            get { return (UInt32)(CertificateTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 CertificateTableSize
+        {
+            get { return (UInt32)(CertificateTable >> 32); }
+        }
+
         [FieldOffset(0x28)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 BaseRelocationTable;
+
+        public UInt32 BaseRelocationTableAddress
+        {
+            get { return (UInt32)(BaseRelocationTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 BaseRelocationTableSize
+        {
+            get { return (UInt32)(BaseRelocationTable >> 32); }
+        }
 
         [FieldOffset(0x30)]
         [MarshalAs(UnmanagedType.U8)]
@@ -78,23 +128,73 @@ namespace DissectPECOFFBinary
 
         [FieldOffset(0x38)]
         [MarshalAs(UnmanagedType.U8)]
-        public UInt64 Architecture;
+        public UInt64 ArchitectureData;
+
+        public UInt32 ArchitectureDataAddress
+        {
+            get { return (UInt32)(ArchitectureData & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 ArchitectureDataSize
+        {
+            get { return (UInt32)(ArchitectureData >> 32); }
+        }
 
         [FieldOffset(0x40)]
         [MarshalAs(UnmanagedType.U8)]
-        public UInt64 GlobalPtr;
+        public UInt64 GlobalPtrAndReserve;
+
+        public UInt32 GlobalPtr
+        {
+            get { return (UInt32)(GlobalPtrAndReserve & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 Reserve1
+        {
+            get { return (UInt32)(GlobalPtrAndReserve >> 32); }
+        }
 
         [FieldOffset(0x48)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 TLSTable;
 
+        public UInt32 TLSTableAddress
+        {
+            get { return (UInt32)(TLSTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 TLSTableSize
+        {
+            get { return (UInt32)(TLSTable >> 32); }
+        }
+
         [FieldOffset(0x50)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 LoadConfigTable;
 
+        public UInt32 LoadConfigTableAddress
+        {
+            get { return (UInt32)(LoadConfigTable & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 LoadConfigTableSize
+        {
+            get { return (UInt32)(LoadConfigTable >> 32); }
+        }
+
         [FieldOffset(0x58)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 BoundImport;
+
+        public UInt32 BoundImportAddress
+        {
+            get { return (UInt32)(BoundImport & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 BoundImportSize
+        {
+            get { return (UInt32)(BoundImport >> 32); }
+        }
 
         [FieldOffset(0x60)]
         [MarshalAs(UnmanagedType.U8)]
@@ -113,6 +213,16 @@ namespace DissectPECOFFBinary
         [FieldOffset(0x68)]
         [MarshalAs(UnmanagedType.U8)]
         public UInt64 DelayImportDescriptor;
+
+        public UInt32 DelayImportDescriptorAddress
+        {
+            get { return (UInt32)(DelayImportDescriptor & 0x00000000FFFFFFFF); }
+        }
+
+        public UInt32 DelayImportDescriptorSize
+        {
+            get { return (UInt32)(DelayImportDescriptor >> 32); }
+        }
 
         [FieldOffset(0x70)]
         [MarshalAs(UnmanagedType.U8)]
@@ -153,7 +263,7 @@ namespace DissectPECOFFBinary
             returnValue.AppendLine();
             returnValue.AppendFormat("Debug: 0x{0:X}", Debug);
             returnValue.AppendLine();
-            returnValue.AppendFormat("Architecture: 0x{0:X}", Architecture);
+            returnValue.AppendFormat("Architecture: 0x{0:X}", ArchitectureData);
             returnValue.AppendLine();
             returnValue.AppendFormat("GlobalPtr: 0x{0:X}", GlobalPtr);
             returnValue.AppendLine();
