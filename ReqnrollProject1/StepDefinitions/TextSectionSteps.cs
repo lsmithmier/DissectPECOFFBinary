@@ -356,7 +356,7 @@ namespace PECOFFBinary.SpecFlow
         {
             if (string.IsNullOrEmpty(cvSignature))
             {
-                cvSignature = null;
+                cvSignature = "\0\0\0\0";
             }
             var codeViewHeader= ScenarioContext.Current.Get<CodeViewHeader>("CodeViewHeader");
             Assert.AreEqual(cvSignature, codeViewHeader.CvSignature, string.Format("Assert.AreEqual failed on CodeViewHeader CvSignature.  Expected: <{0}>.  Actual: <{1}>", cvSignature, codeViewHeader.CvSignature));
